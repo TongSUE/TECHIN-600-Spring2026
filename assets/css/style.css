@@ -340,6 +340,16 @@ code {
 }
 .project-card:hover .card-thumb img { transform: scale(1.04); }
 
+/* Card with full, uncropped image */
+.card-thumb--natural {
+  aspect-ratio: unset;
+  height: auto;
+}
+.card-thumb--natural img {
+  height: auto;
+  object-fit: contain;
+}
+
 .card-thumb-placeholder {
   width: 100%; height: 100%;
   display: flex;
@@ -731,12 +741,16 @@ blockquote {
 
 /* Cover photo — between hero section and main layout */
 .project-cover {
-  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto 0;
+  padding: 0 36px;
   line-height: 0;
 }
 .project-cover img {
   width: 100%;
-  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
   display: block;
 }
 
@@ -880,8 +894,8 @@ blockquote {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s var(--ease-out);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 .lightbox.open { opacity: 1; pointer-events: all; }
 
