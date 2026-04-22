@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project 01: Silicone Mold Experiment — TECHIN 600</title>
-  <meta name="description" content="Making a silicone mold from an existing phone case. Week 1–2 of TECHIN 600 Independent Study." />
+  <meta name="description" content="Making a two-part silicone mold from an existing phone case. Week 1–2 of TECHIN 600 Independent Study." />
   <link rel="stylesheet" href="../../assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,11 +40,11 @@
   <div class="container">
     <p class="project-hero-kicker">Project 01 · Week 1 – 2</p>
     <h1 class="project-hero-title">Silicone Mold<br>Experiment</h1>
-    <p class="project-hero-subtitle">Making a mold from an existing phone case to understand silicone material behavior</p>
+    <p class="project-hero-subtitle">Making a two-part silicone mold from an existing phone case — a deliberate practice run before the main enclosure project</p>
     <div class="project-hero-meta">
       <span class="meta-tag"><span>Status</span> Complete</span>
-      <span class="meta-tag"><span>Method</span> Open-face silicone mold</span>
-      <span class="meta-tag"><span>Cast</span> Two-part resin</span>
+      <span class="meta-tag"><span>Method</span> Two-part silicone mold</span>
+      <span class="meta-tag"><span>Cast</span> Glitter resin</span>
     </div>
   </div>
 </section>
@@ -94,26 +94,30 @@
       <h2 class="content-section-title">The starting point</h2>
 
       <p>
-        Before working on the main custom enclosure, Kevin had me start with a simple experiment:
-        pick an existing physical object, make a silicone mold of it, and cast a copy using
-        two-part resin. The goal wasn't a perfect copy — it was to get comfortable with the
-        material behavior and workflow before anything was at stake.
+        Before jumping into the main enclosure project, Kevin had me start with a practice run:
+        pick an existing physical object, make a silicone mold of it, and cast a copy. The goal
+        wasn't a perfect duplicate — it was to get hands-on experience with material behavior and
+        workflow before anything critical was on the line.
       </p>
       <p>
-        I chose a phone case (not designed by me) because it has a mix of curved surfaces,
-        thin walls, and some surface texture — interesting enough to learn from, simple enough
-        to not overthink.
+        I chose a phone case. Kevin's honest assessment: it's a tricky first object — thin walls,
+        hollow cutouts for buttons and a large camera opening. But that's exactly what made it
+        interesting. Challenge accepted.
       </p>
 
       <p class="content-section-label" style="margin-top: 28px;">Materials Used</p>
       <div class="overview-materials">
-        <span class="material-chip">Platinum-cure silicone (Part A + B)</span>
-        <span class="material-chip">Two-part polyurethane resin</span>
-        <span class="material-chip">Mold release spray</span>
-        <span class="material-chip">Mixing cups &amp; stir sticks</span>
-        <span class="material-chip">Phone case (existing object)</span>
-        <span class="material-chip">Cardboard mold box</span>
-        <span class="material-chip">Hot glue</span>
+        <span class="material-chip">Tin-cure silicone (A:B = 1:10 by weight)</span>
+        <span class="material-chip">Two-part polyurethane resin (A:B = 1:1 by volume)</span>
+        <span class="material-chip">Cherry plywood (laser-cut, 2 layers per wall)</span>
+        <span class="material-chip">Cardboard &amp; hot glue (mold box rebuild)</span>
+        <span class="material-chip">Tape + acrylic sheet (hole blocking)</span>
+        <span class="material-chip">Air-dry clay (prototype ballast)</span>
+        <span class="material-chip">Vaseline (parting agent)</span>
+        <span class="material-chip">Glitter pigments</span>
+        <span class="material-chip">Vacuum degassing chamber</span>
+        <span class="material-chip">Digital scale, beakers, stir sticks</span>
+        <span class="material-chip">Craft knife + sandpaper (post-processing)</span>
       </div>
     </section>
 
@@ -122,43 +126,55 @@
       <p class="content-section-label">
         <span class="content-section-num">02</span> Theory
       </p>
-      <h2 class="content-section-title">What I read &amp; learned</h2>
+      <h2 class="content-section-title">Pre-learning</h2>
 
-      <p>
-        Kevin shared some foundational reading on silicone mold-making before we started.
-        The key ideas I took away:
-      </p>
+      <p>Kevin shared some reference materials before we started:</p>
 
       <blockquote>
-        "Platinum-cure (addition-cure) silicones are preferred for product work because they
-        don't shrink as much, have better detail capture, and are compatible with most resins.
-        Tin-cure silicones are cheaper but shrink over time."
+        "Don't trust this guy on his power tool usage, but his mold making is pretty good."
+        — <a href="https://www.youtube.com/watch?v=3obngISQ_yk" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:underline; text-underline-offset:3px;">YouTube: Mold making tutorial ↗</a>
       </blockquote>
 
+      <blockquote>
+        "Here's another process, but with a very experienced mold maker critiquing it. I like this guy much more."
+        — <a href="https://www.youtube.com/watch?v=Nn8lssR0Ht8" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:underline; text-underline-offset:3px;">YouTube: Expert critique walkthrough ↗</a>
+      </blockquote>
+
+      <blockquote>
+        "Here's another article that might be useful for you when we get into injection molding."
+        — <a href="https://www.techkits.com/pages/faqs/mold_guide.pdf" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:underline; text-underline-offset:3px;">Article: Mold guide (injection molding reference) ↗</a>
+      </blockquote>
+
+      <p>Key things I took away from the reading:</p>
+
       <p>
-        <strong>Why silicone?</strong> Silicone is flexible, self-releasing for most resins, and
-        captures fine surface detail accurately. It can be poured around an object and
-        demolded without damaging the original.
+        <strong>Tin-cure vs. platinum-cure silicone.</strong> We used tin-cure here — it's cheaper
+        and more accessible, though it shrinks slightly over time. Platinum-cure is preferred for
+        high-precision production work (better dimensional stability, no shrinkage). For a learning
+        exercise, tin-cure is perfectly fine.
       </p>
 
       <p>
-        <strong>Open-face vs two-part molds.</strong> An open-face mold is the simplest: you
-        build a box around the object, pour silicone over the top, and let it cure. You can
-        only cast objects with one flat side. A two-part mold allows both sides to be captured,
-        but requires designing a parting line and registration marks so the two halves align.
-        For this experiment, open-face was the right choice.
+        <strong>The mixing ratio is everything.</strong> Tin-cure silicone is A:B = 1:10 by weight.
+        Part A is the catalyst — the manufacturer dyes it pink so you can visually confirm uniform
+        mixing. Too much catalyst → pot life drops sharply and the silicone sets before you finish
+        pouring. Too little → it may not fully cure for days. With the <span class="mark-circle">correct ratio</span>,
+        you have about 40 minutes of working time.
       </p>
 
       <p>
-        <strong>Resin basics.</strong> Two-part polyurethane resins cure by chemical reaction
-        (not evaporation). Mix ratio must be <span class="mark-circle">exact</span> — usually 1:1 or 1:2 by volume. Pot life
-        (working time) is typically 3–5 minutes for fast-cure resins; full cure is 30 min–24 hours.
-        <span class="mark-highlight">Air bubbles are the main enemy</span> — they get trapped during mixing and pouring.
+        <strong>Degassing removes trapped air.</strong> Before pouring, the mixed silicone goes into
+        a vacuum chamber. As pressure drops, trapped bubbles expand and rise to the surface — the
+        silicone visibly expands to several times its original volume. You release pressure
+        intermittently to prevent it from overflowing the container. When it starts collapsing on
+        its own without venting, the air is out.
       </p>
 
-      <!-- Placeholder: add Kevin's reference materials/links here -->
-      <p style="color:var(--text-light); font-size:0.82rem; font-style:italic;">
-        [Reference: Kevin's reading material — add link or notes here]
+      <p>
+        <strong>Resin basics.</strong> Two-part polyurethane resin cures by chemical reaction, not
+        evaporation. Mix ratio must be exact — 1:1 by volume for this resin. Pot life is short, so
+        once you start mixing, move with intention. <span class="mark-highlight">Incomplete mixing and trapped air
+        bubbles are the main failure modes.</span>
       </p>
     </section>
 
@@ -171,87 +187,250 @@
 
       <div class="process-steps">
 
+        <!-- Step 1 -->
         <div class="step">
           <div class="step-num">1</div>
           <div class="step-body">
             <h4>Build the mold box</h4>
             <p>
-              I built a simple box out of cardboard, sized about <span class="mark-underline">1 cm larger</span> than the phone case
-              on each side to give the silicone enough wall thickness. <span class="mark-wave">Hot-glued all seams</span> to
-              prevent leaks. Placed the phone case face-up and secured it to the base so it
-              wouldn't float when the silicone was poured.
+              I laser-cut the mold box sides from cherry plywood. Because the individual sheets
+              were a bit thin, I stacked <span class="mark-underline">two layers per wall</span> —
+              the added thickness keeps the walls vertical and gives the box enough rigidity to hold
+              its shape when heavy silicone is poured in. Sealed all seams and joints with hot glue.
             </p>
-            <div class="photo-grid">
-              <div class="photo-placeholder">
-                <span class="photo-placeholder-icon">📷</span>
-                <span class="photo-placeholder-label">Mold box setup</span>
-              </div>
-              <div class="photo-placeholder">
-                <span class="photo-placeholder-icon">📷</span>
-                <span class="photo-placeholder-label">Phone case placed inside</span>
+            <div class="photo-grid photo-grid--1">
+              <div class="photo-item" data-caption="Laser-cut cherry plywood mold box — two layers per wall">
+                <img src="box_structure.png" alt="Laser-cut cherry plywood mold box structure" loading="lazy" />
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Step 2 -->
         <div class="step">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h4>Mix &amp; pour silicone</h4>
+            <h4>Pre-process the prototype</h4>
             <p>
-              Mixed Part A and Part B at a 1:1 ratio by weight. Stirred slowly for 3 minutes,
-              scraping the sides of the cup. Poured in a thin stream from a corner of the box
-              to reduce air bubbles — the silicone flows around the object and any trapped air
-              rises to the surface.
+              The phone case has several openings — button cutouts, charging port, and a large
+              camera hole. Left unsealed, silicone would flow into these gaps and lock the case
+              inside the mold permanently, making it impossible to demold cleanly.
             </p>
-            <div class="photo-grid">
-              <div class="photo-placeholder">
-                <span class="photo-placeholder-icon">📷</span>
-                <span class="photo-placeholder-label">Mixing silicone</span>
-              </div>
-              <div class="photo-placeholder">
-                <span class="photo-placeholder-icon">📷</span>
-                <span class="photo-placeholder-label">Pouring into mold box</span>
+            <p>
+              I taped over the smaller holes. For the camera opening, I cut a thin acrylic sheet
+              to cover it — <span class="mark-wave">tape alone wasn't rigid enough</span> for
+              such a wide span.
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <div class="photo-item" data-caption="Acrylic sheet cut to seal the camera cutout">
+                <img src="acrylic_for_camera.png" alt="Acrylic sheet blocking the camera hole" loading="lazy" />
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Step 3 -->
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
-            <h4>Cure &amp; demold</h4>
+            <h4>Fix the prototype in the box</h4>
             <p>
-              Let cure at room temperature for 16 hours (overnight). Tore apart the cardboard
-              box, then slowly peeled the silicone mold away from the phone case. The silicone
-              stretched around the undercuts without tearing — the flexibility is key here.
+              Kevin suggested filling the inside of the phone case with air-dry clay before
+              placing it in the mold box.
             </p>
             <div class="photo-grid photo-grid--1">
-              <div class="photo-placeholder">
-                <span class="photo-placeholder-icon">📷</span>
-                <span class="photo-placeholder-label">Finished silicone mold after demolding</span>
+              <div class="photo-item" data-caption="Filling the phone case with clay">
+                <img src="clay.png" alt="Phone case filled with air-dry clay" loading="lazy" />
+              </div>
+            </div>
+            <p style="margin-top: 14px;">Two reasons this helps:</p>
+            <ol style="padding-left: 1.4em; margin: 10px 0 14px; line-height: 1.8;">
+              <li>The clay adds weight and surface contact — combined with its natural stickiness, it anchors the case to the base board so it won't float or shift when the silicone is poured in.</li>
+              <li>It seals the case edges more thoroughly. Tape is thin; the clay fills any gaps that could let air escape and create bubbles in the mold.</li>
+            </ol>
+            <p>
+              With the clay in place, I inverted the phone case and pressed it face-down onto the
+              base board. Kevin also recommended adding a few wood strip registration bosses around
+              the perimeter — ideally you'd use tapered alignment pins for better guidance, but the
+              laser cutter can't produce undercuts, so simple strips work as a basic guide for
+              aligning the two mold halves later.
+            </p>
+            <div class="photo-grid">
+              <div class="photo-item" data-caption="Phone case inverted and fixed in the mold box">
+                <img src="phone_case_in_the_box.png" alt="Phone case placed face-down in mold box" loading="lazy" />
+              </div>
+              <div class="photo-item" data-caption="Wood strip registration bosses added around the mold">
+                <img src="add_mounting_boss.png" alt="Registration bosses around the mold box" loading="lazy" />
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Step 4 -->
         <div class="step">
           <div class="step-num">4</div>
           <div class="step-body">
-            <h4>Cast resin</h4>
+            <h4>Mix &amp; degas the silicone</h4>
             <p>
-              Sprayed a light coat of mold release into the silicone mold. Mixed two-part resin
-              at 1:1 by volume. Poured slowly into the mold. Pot life was about 3 minutes so
-              speed mattered. Left to cure for 1 hour before demolding.
+              Messy, careful work — lay down waste paper, gloves on, cleanup tools ready. We
+              used tin-cure silicone at a 1:10 A:B ratio by weight.
+            </p>
+            <p>
+              A tip Kevin shared: write Part B's weight directly on the waste paper while you're
+              measuring it, so you have a quick reference when you measure Part A. (You'll thank
+              yourself when you forget the number mid-pour — I definitely would have.)
+            </p>
+            <p>
+              Stir continuously until the mixture is a completely uniform color — no streaks, no
+              color bands, especially at the cup edges and walls. Any visible inconsistency means
+              unmixed catalyst, which creates soft or uncured spots in the finished mold.
+            </p>
+            <p>
+              Then into the vacuum degassing chamber. The green valve (left) connects to the pump;
+              the red valve (right) vents to the atmosphere. Close red, open green, start the pump —
+              watch the pressure gauge drop and the silicone begin to expand dramatically. When it
+              approaches the rim, crack the red valve slightly to let it collapse, then close and
+              continue pumping. When the silicone starts collapsing on its own without venting —
+              the bubbles are gone. Close the green valve, wait a couple of minutes, then slowly
+              open the red to re-equalize before opening the chamber.
             </p>
             <div class="photo-grid">
-              <div class="photo-placeholder">
-                <span class="photo-placeholder-icon">📷</span>
-                <span class="photo-placeholder-label">Pouring resin</span>
+              <div class="photo-item" data-caption="Tin-cure silicone — Part A (pink catalyst) and Part B">
+                <img src="silicone_material.png" alt="Tin-cure silicone parts A and B" loading="lazy" />
               </div>
-              <div class="photo-placeholder">
-                <span class="photo-placeholder-icon">📷</span>
-                <span class="photo-placeholder-label">Cast result after demolding</span>
+              <div class="photo-item" data-caption="Silicone degassing in the vacuum chamber">
+                <img src="degassing_silicone.png" alt="Degassing silicone in vacuum chamber" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4>Pour the bottom half — cure overnight</h4>
+            <p>
+              Pour from one corner of the mold box. Raise the container as high as comfortably
+              possible and let the stream run thin — the narrow stream naturally breaks up any
+              remaining bubbles, and the silicone flows around the object on its own, filling every
+              corner.
+            </p>
+            <p>
+              Then: wait. Tin-cure silicone takes about 8 hours at room temperature.
+            </p>
+            <div class="photo-grid">
+              <div class="photo-item" data-caption="Pouring silicone from height — thin stream reduces bubbles">
+                <img src="pour_silicone.png" alt="Pouring silicone in a thin stream from height" loading="lazy" />
+              </div>
+              <div class="photo-item" data-caption="Waiting for the bottom half to cure overnight">
+                <img src="wait_until_April_10.png" alt="Silicone bottom half curing overnight" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h4>Demold the bottom half &amp; prep for the top</h4>
+            <p>
+              Once cured, tear apart the mold box walls and carefully lift out the bottom half
+              with the phone case still embedded in it.
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <div class="photo-item" data-caption="Removing the mold box walls after the bottom half cures">
+                <img src="remove_wall.png" alt="Tearing down mold box walls to reveal bottom half" loading="lazy" />
+              </div>
+            </div>
+            <p style="margin-top: 14px;">
+              Remove the clay and tape. Then the critical step: coat every exposed silicone surface
+              with vaseline — the flat parting face, inside every hole recess, and around every
+              registration boss impression. Don't miss a single spot. Any uncovered silicone-to-silicone
+              contact during the second pour will fuse the two halves together permanently.
+            </p>
+            <p>
+              Trim any rough edges with scissors or a craft knife. Set the phone case face-up,
+              rebuild the mold box walls around the bottom half, and seal with hot glue.
+            </p>
+            <div class="photo-grid">
+              <div class="photo-item" data-caption="Applying vaseline to all exposed silicone surfaces">
+                <img src="apply_vaseline.png" alt="Coating silicone parting surface with vaseline" loading="lazy" />
+              </div>
+              <div class="photo-item" data-caption="Mold box rebuilt around the bottom half for the second pour">
+                <img src="rebuild_wall.png" alt="Mold box rebuilt for top half pour" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step">
+          <div class="step-num">7</div>
+          <div class="step-body">
+            <h4>Pour the top half &amp; split the mold</h4>
+            <p>
+              Second silicone pour, same technique — corner pour from height. Another ~8 hours of
+              waiting.
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <div class="photo-item" data-caption="Top half curing overnight">
+                <img src="wait_until_April_16.png" alt="Top half silicone curing overnight" loading="lazy" />
+              </div>
+            </div>
+            <p style="margin-top: 14px;">
+              Tear down the box again, then separate the two halves. The vaseline does its job —
+              they peel apart cleanly without sticking.
+            </p>
+            <div class="photo-grid">
+              <div class="photo-item" data-caption="Splitting the two mold halves apart">
+                <img src="split_mold.png" alt="Separating the two silicone mold halves" loading="lazy" />
+              </div>
+              <div class="photo-item" data-caption="The completed two-part silicone mold">
+                <img src="mold_complete.png" alt="Completed two-part silicone mold" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step">
+          <div class="step-num">8</div>
+          <div class="step-body">
+            <h4>Mix resin &amp; cast</h4>
+            <p>
+              AB resin, 1:1 by volume. For this mold, about 2–3 oz total.
+            </p>
+            <p>
+              The most fun part: adding glitter. I mixed white, light blue, and deep blue glitter
+              with a small touch of gold for depth. It felt a bit like mixing nail polish colors —
+              unexpectedly satisfying.
+            </p>
+            <div class="photo-grid">
+              <div class="photo-item" data-caption="Glitter pigments and resin components">
+                <img src="glitter_powder_and_resin.png" alt="Glitter pigments and resin parts A and B" loading="lazy" />
+              </div>
+              <div class="photo-item" data-caption="Mixing resin with glitter pigments">
+                <img src="mix_resin.png" alt="Mixing glitter into resin" loading="lazy" />
+              </div>
+            </div>
+            <p style="margin-top: 14px;">
+              Mix vigorously for about 5 minutes. Same discipline as the silicone — pay extra
+              attention to cup edges and bottom.
+            </p>
+            <p>
+              Pour resin into the bottom mold half — deliberately overfill it. Press the top half
+              down steadily so the excess resin squeezes out from the edges naturally. Transfer
+              the closed mold to a fresh sheet of waste paper (to prevent the overflow resin from
+              gluing to the table while still wet). Wait ~24 hours.
+            </p>
+            <div class="photo-grid">
+              <div class="photo-item" data-caption="Pressing the mold halves together — excess resin squeezes out">
+                <img src="molding.png" alt="Closing mold halves with resin inside" loading="lazy" />
+              </div>
+              <div class="photo-item" data-caption="Freshly demolded cast after 24 hours">
+                <img src="molding_complete.png" alt="Cast phone case after demolding" loading="lazy" />
               </div>
             </div>
           </div>
@@ -270,45 +449,48 @@
       <div class="knowledge-list">
 
         <div class="knowledge-card">
-          <h4>Mix by weight, not just volume</h4>
+          <h4>Weigh the silicone — every gram matters</h4>
           <p>
-            For platinum silicones, weight is more accurate than eyeballing volume —
-            the two parts often have different densities. A kitchen scale is worth it.
+            For tin-cure silicone, the A:B ratio is 1:10 by weight. Part A is the catalyst. Too
+            much → pot life drops sharply, the silicone sets before you finish pouring. Too little
+            → may not fully cure for days. A kitchen scale, and writing the target weight on your
+            waste paper before you start, both help.
           </p>
         </div>
 
         <div class="knowledge-card">
-          <h4>Pour thin and slow to avoid bubbles</h4>
+          <h4>Pour from a corner, raise the container high</h4>
           <p>
-            A thin, high stream of silicone breaks up any bubbles forming in the cup.
-            Pour from a corner, not directly onto the object. Tilting the mold box while
-            pouring helps it flow under crevices.
+            A thin silicone stream from height naturally pops bubbles as it falls. Pouring directly
+            onto the object traps air underneath. Flow from a corner and let the silicone find its
+            own way around. Tilting the mold box slightly while pouring helps it reach tight spots.
           </p>
         </div>
 
         <div class="knowledge-card">
           <h4>Silicone wall thickness ≥ 10 mm at the thinnest point</h4>
           <p>
-            Thinner than 10 mm and the mold tears easily, especially around sharp detail.
-            Over-sizing the mold box is safer than under-sizing.
+            Thinner than 10 mm and the mold tears easily, especially around tight detail. Oversize
+            your mold box — silicone is the cheap part compared to a ruined mold.
           </p>
         </div>
 
         <div class="knowledge-card">
-          <h4>Inhibition: platinum silicones are sensitive to contamination</h4>
+          <h4>Degas before every pour</h4>
           <p>
-            Sulfur-containing materials (some clays, latex gloves, certain foams) can inhibit
-            platinum-cure silicone — it stays sticky and never fully cures. Use nitrile gloves.
-            Test unfamiliar materials with a small batch first.
+            The vacuum chamber is not optional. Even a well-stirred mix has microscopic bubbles.
+            Degassing visibly expands and bursts them. Release pressure intermittently to prevent
+            the silicone from overflowing; when it collapses on its own without prompting,
+            the air is out.
           </p>
         </div>
 
         <div class="knowledge-card">
-          <h4>Mold release is essential for resin casting</h4>
+          <h4>Vaseline keeps the two mold halves from bonding — don't miss a spot</h4>
           <p>
-            Without mold release, polyurethane resin can bond to the silicone permanently.
-            A thin, even coat of spray release is enough. Let it flash off (30 seconds) before
-            pouring.
+            Any exposed silicone-to-silicone contact during the second pour will fuse permanently.
+            Coat the entire parting face, every hole recess, every registration impression. A
+            missed patch means a mold you can't open.
           </p>
         </div>
 
@@ -326,27 +508,74 @@
         <div class="notes-content">
           <p class="notes-date">Week 1 – 2 · Spring 2026</p>
 
+          <div class="photo-grid photo-grid--1" style="margin-bottom: 28px;">
+            <div class="photo-item" data-caption="Final result — the cast phone case in use">
+              <img src="hero_image.png" alt="Finished glitter resin phone case in use" loading="lazy" />
+            </div>
+          </div>
+
           <p>
-            [Add your personal notes here — what surprised you, what Kevin said in person,
-            what felt different from what you expected.]
+            Kevin was right that a phone case would be a tricky first object. The thin walls and
+            the multiple cutouts made it genuinely difficult. But those difficulties turned out to
+            be the most useful part — they forced me to think about every step rather than just
+            following a recipe.
           </p>
 
           <p>
-            [What was harder than expected? What was easier?]
+            The overall pace was slower and more methodical than I expected. You commit to a step
+            and then wait overnight, twice. Mistakes only reveal themselves after the silicone has
+            already cured. The vacuum degassing was the most satisfying moment — watching the
+            silicone visibly expand and then slowly collapse as the air left was surprisingly visual
+            and almost meditative.
           </p>
 
-          <ul class="reflection-list" style="margin-top: 24px;">
+          <p>
+            Adding the glitter to the resin was genuinely fun. The white + light blue + deep blue
+            + touch of gold combination came together with a depth I didn't predict — somewhere
+            between frosted glass and sandy mahjong tiles. I didn't expect to enjoy that step as
+            much as I did.
+          </p>
+
+          <p>
+            The final result surprised me. It actually works as a phone case. It fits, it's
+            usable, it's mine. Way beyond what I expected for a first attempt.
+          </p>
+
+          <div class="photo-grid photo-grid--3" style="margin-top: 20px;">
+            <div class="photo-item" data-caption="The finished cast phone case">
+              <img src="phone_case_outcome.png" alt="Finished cast phone case" loading="lazy" />
+            </div>
+            <div class="photo-item" data-caption="Detail view — areas for post-processing">
+              <img src="phone_case_detail.png" alt="Phone case detail showing areas to improve" loading="lazy" />
+            </div>
+            <div class="photo-item" data-caption="Comparison with the original phone case">
+              <img src="comparison_with_original.png" alt="Cast vs original phone case comparison" loading="lazy" />
+            </div>
+          </div>
+
+          <p style="margin-top: 20px;">
+            One result that genuinely impressed me: silicone captures fine surface detail
+            remarkably well. The tiny rabbit emboss on the original case was replicated in full.
+          </p>
+
+          <div class="photo-grid photo-grid--1">
+            <div class="photo-item" data-caption="Tiny rabbit emboss from the original — fully replicated">
+              <img src="rabbit_emboss_layer.png" alt="Rabbit emboss detail replicated in the cast" loading="lazy" />
+            </div>
+          </div>
+
+          <ul class="reflection-list" style="margin-top: 28px;">
             <li>
               <span class="reflection-icon">✓</span>
-              <span><strong>What worked:</strong> [Add reflection here]</span>
+              <span><strong>What worked:</strong> The two mold halves separated cleanly. Glitter distribution is even and looks intentional. Most surprisingly — the tiny rabbit emboss was fully replicated in the cast.</span>
             </li>
             <li>
               <span class="reflection-icon">△</span>
-              <span><strong>What I'd do differently:</strong> [Add reflection here]</span>
+              <span><strong>What I'd do differently:</strong> Apply more consistent, firm pressure when closing the mold halves — the slightly-thick bottom and the air pocket likely came from uneven force. Also degas the resin before pouring, not just the silicone.</span>
             </li>
             <li>
               <span class="reflection-icon">→</span>
-              <span><strong>What this taught me for the main project:</strong> [Add reflection here]</span>
+              <span><strong>What this taught me for the main project:</strong> Surface detail transfers remarkably well through silicone. Registration features need to be more precisely designed (tapered is better than flat strips). Always budget time for post-processing — knife, sandpaper, and patience are part of the process.</span>
             </li>
           </ul>
         </div>
