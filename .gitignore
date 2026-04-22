@@ -1,0 +1,12 @@
+# Course documents — keep local only
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*~

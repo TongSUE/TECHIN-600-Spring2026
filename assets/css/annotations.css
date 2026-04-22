@@ -1,0 +1,36 @@
+/* ============================================
+   Annotation System — CSS helpers
+   Drawing is handled by RoughNotation JS.
+   This file only provides color presets and
+   ensures annotated elements are inline.
+   ============================================ */
+
+.mark-circle,
+.mark-highlight,
+.mark-underline,
+.mark-wave,
+.mark-box,
+.mark-strike,
+.mark-bracket {
+  display: inline;
+  position: relative;
+}
+
+/* Circle gets horizontal breathing room in the text flow
+   so surrounding characters don't sit inside the oval stroke */
+.mark-circle {
+  padding: 0 0.25em;
+}
+
+/* ---- RoughNotation SVG — behind text ---- */
+.rough-annotation {
+  z-index: -1 !important;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* ---- Color variant helpers ---- */
+/* Usage: <span class="mark-circle mark--blue">text</span>  */
+/* or:    <span class="mark-circle" data-mark-color="#6B9FD4">text</span> */
+
+/* default coral is set in annotations.js as DEFAULT_COLOR = '#E07A5F' */

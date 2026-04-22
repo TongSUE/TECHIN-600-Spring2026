@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 02: Custom Hardware Enclosure — TECHIN 600</title>
+  <meta name="description" content="Designing and casting a custom hardware enclosure with DFM principles. Week 2–10 of TECHIN 600 Independent Study." />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="project-page">
+
+<!-- Reading Progress -->
+<div class="reading-progress"><div class="reading-progress-bar"></div></div>
+
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <nav class="container site-nav">
+    <a href="../../index.html" class="nav-logo">
+      <span class="nav-logo-main">TECHIN 600</span>
+      <span class="nav-logo-sub">Spring 2026 · Process Book</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../../index.html#overview">Overview</a></li>
+      <li><a href="../../index.html#projects">Projects</a></li>
+      <li><a href="https://github.com/TongSUE/TECHIN-600-Spring2026" target="_blank" rel="noopener">GitHub ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Back link -->
+<a href="../../index.html" class="back-link">
+  <span class="arrow">←</span> All Projects
+</a>
+
+<!-- ====== PROJECT HERO ====== -->
+<section class="project-hero">
+  <div class="container">
+    <p class="project-hero-kicker">Project 02 · Week 2 – 10</p>
+    <h1 class="project-hero-title">Custom Hardware<br>Enclosure</h1>
+    <p class="project-hero-subtitle">Redesigning an enclosure with DFM principles — from CAD to casting to assembly</p>
+    <div class="project-hero-meta">
+      <span class="meta-tag"><span>Status</span> In Progress</span>
+      <span class="meta-tag"><span>Method</span> Two-part mold + resin cast</span>
+      <span class="meta-tag"><span>Tools</span> CAD · SLA Print · Injection Molding</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MAIN LAYOUT ====== -->
+<div class="project-layout">
+
+  <!-- Sidebar Nav -->
+  <aside class="project-sidebar">
+    <ul class="sidebar-nav">
+      <li>
+        <a href="#overview" class="active">
+          <span class="sidebar-nav-num">01</span> Overview
+        </a>
+      </li>
+      <li>
+        <a href="#theory">
+          <span class="sidebar-nav-num">02</span> Theory
+        </a>
+      </li>
+      <li>
+        <a href="#process">
+          <span class="sidebar-nav-num">03</span> Process
+        </a>
+      </li>
+      <li>
+        <a href="#knowledge">
+          <span class="sidebar-nav-num">04</span> Knowledge
+        </a>
+      </li>
+      <li>
+        <a href="#notes">
+          <span class="sidebar-nav-num">05</span> Notes
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Content -->
+  <main class="project-content">
+
+    <!-- In Progress Banner -->
+    <div class="in-progress-banner">
+      <span class="in-progress-icon">🔧</span>
+      <div class="in-progress-text">
+        <h4>This project is currently in progress</h4>
+        <p>Content will be updated weekly as work progresses through Week 10. Check back for new process photos, notes, and reflections.</p>
+      </div>
+    </div>
+
+    <!-- ---- SECTION 01: OVERVIEW ---- -->
+    <section class="content-section" id="overview">
+      <p class="content-section-label">
+        <span class="content-section-num">01</span> Overview
+      </p>
+      <h2 class="content-section-title">The main project</h2>
+
+      <p>
+        The main project for this quarter is to take a target hardware enclosure and redesign
+        it from scratch with full DFM principles — meaning the design must be able to be
+        actually manufactured via casting and injection molding, not just 3D printed.
+      </p>
+      <p>
+        This involves CAD work (defining parting lines, adding draft angles, designing internal
+        mounting bosses and snap-fits), creating a master pattern via SLA printing, making a
+        professional two-part silicone mold, casting the enclosure in resin, and finally
+        assembling and post-processing the result.
+      </p>
+
+      <p class="content-section-label" style="margin-top: 28px;">Target Object</p>
+      <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+        [Add description of the chosen hardware enclosure here — what it is, why you chose it]
+      </p>
+
+      <p class="content-section-label" style="margin-top: 20px;">Phase Overview</p>
+      <ul class="overview-goals" style="margin-top: 8px;">
+        <li>Weeks 2–3: CAD redesign with DFM principles (parting lines, draft angles, internal structures)</li>
+        <li>Week 4: Master pattern prep — SLA print, sanding, surface finishing</li>
+        <li>Week 5: Two-part mold design and silicone pouring</li>
+        <li>Weeks 6–7: Resin casting + iteration</li>
+        <li>Week 8: Desktop injection molding exploration (sub-component)</li>
+        <li>Week 9: Assembly and finishing</li>
+        <li>Week 10: Final documentation</li>
+      </ul>
+    </section>
+
+    <!-- ---- SECTION 02: THEORY ---- -->
+    <section class="content-section" id="theory">
+      <p class="content-section-label">
+        <span class="content-section-num">02</span> Theory
+      </p>
+      <h2 class="content-section-title">DFM principles &amp; references</h2>
+
+      <p>
+        Design for Manufacturing means designing parts so they can be efficiently and
+        reliably made using a specific process. For casting and injection molding, several
+        rules govern what geometry is possible and what isn't.
+      </p>
+
+      <blockquote>
+        "A part that can't be demolded isn't a part — it's a permanent installation."
+        The parting line and draft angles are the first things to design, not the last.
+      </blockquote>
+
+      <p>
+        <strong>Draft angles</strong> — vertical walls perpendicular to the parting direction
+        will lock into the mold. A minimum of 1°–3° draft on all surfaces allows clean
+        demolding without tearing the silicone or stressing the part.
+      </p>
+
+      <p>
+        <strong>Parting line</strong> — the seam where the two mold halves meet. Its placement
+        determines what's visible on the final part and what geometry can be captured in each
+        half. Good parting line design is as much an aesthetic decision as a functional one.
+      </p>
+
+      <p>
+        <strong>Wall thickness</strong> — for resin casting, 2–4 mm is typical. Too thin
+        and the part is fragile; too thick and you risk exothermic heat buildup during cure
+        (polyurethane resins generate heat as they cure — a large mass can crack).
+      </p>
+
+      <p>
+        <strong>Mounting bosses &amp; snap-fits</strong> — instead of screws or glue,
+        well-designed snap-fits allow assembly and disassembly without tools. Boss diameter
+        is typically 2× the screw diameter; boss height should not exceed 3× its diameter.
+      </p>
+
+      <p style="color:var(--text-light); font-size:0.82rem; font-style:italic; margin-top: 20px;">
+        [Reference: Kevin's reading materials for Weeks 2–3 — add links or notes here]
+      </p>
+    </section>
+
+    <!-- ---- SECTION 03: PROCESS ---- -->
+    <section class="content-section" id="process">
+      <p class="content-section-label">
+        <span class="content-section-num">03</span> Process
+      </p>
+      <h2 class="content-section-title">Step by step</h2>
+
+      <p style="color:var(--text-light); font-size:0.85rem; font-style:italic; margin-bottom: 32px;">
+        This section will be filled in as each phase is completed.
+      </p>
+
+      <div class="process-steps">
+
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>CAD Redesign — Exterior Shell (Week 2)</h4>
+            <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+              [Add CAD process description + screenshots here]
+            </p>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">CAD — parting line defined</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">CAD — draft angles added</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>CAD Redesign — Internal Structures (Week 3)</h4>
+            <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+              [Add mounting bosses, snap-fits, ribs — CAD description + screenshots]
+            </p>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">CAD — mounting bosses</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">CAD — snap-fits</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Master Pattern — 3D Print &amp; Surface Prep (Week 4)</h4>
+            <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+              [Describe SLA print, sanding process, surface finish achieved]
+            </p>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Fresh SLA print</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">After sanding</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Two-Part Mold — Design &amp; Silicone Pour (Week 5)</h4>
+            <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+              [Describe mold box setup, registration marks/vents, silicone pour]
+            </p>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Mold box with part 1</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Completed two-part mold</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4>Resin Casting &amp; Iteration (Weeks 6–7)</h4>
+            <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+              [Document cast attempts, defects found, adjustments made]
+            </p>
+            <div class="photo-grid photo-grid--3">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Cast attempt 1</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Defects identified</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Improved result</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h4>Injection Molding Exploration (Week 8)</h4>
+            <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+              [Describe desktop injection molding machine setup, small sub-component designed and molded]
+            </p>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Injection molding machine</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Molded sub-component</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">7</div>
+          <div class="step-body">
+            <h4>Assembly &amp; Finishing (Week 9)</h4>
+            <p style="color:var(--text-light); font-size:0.85rem; font-style:italic;">
+              [Post-processing, assembly, snap-fit testing, final result]
+            </p>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Assembly process</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-label">Final assembled product</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- SECTION 04: KNOWLEDGE POINTS ---- -->
+    <section class="content-section" id="knowledge">
+      <p class="content-section-label">
+        <span class="content-section-num">04</span> Knowledge Points
+      </p>
+      <h2 class="content-section-title">Things to remember</h2>
+
+      <div class="knowledge-list">
+
+        <div class="knowledge-card">
+          <h4>Draft angle rule of thumb: 1° minimum, 3° preferred</h4>
+          <p>
+            More draft = easier demolding. Less draft = better appearance. The balance
+            depends on texture: textured surfaces need more draft than polished ones.
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4>Parting line placement affects part aesthetics</h4>
+          <p>
+            Mold seam lines are always visible to some degree. Place the parting line
+            at a natural edge or shadow line on the design so it's least noticeable.
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4>Boss design ratio: height ≤ 3× diameter</h4>
+          <p>
+            Tall, thin bosses are fragile and hard to demold. Keep the height-to-diameter
+            ratio under 3:1. Add gussets to bosses that experience lateral loads.
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4>Vent holes prevent air traps in two-part molds</h4>
+          <p>
+            Any cavity in the mold that air can't escape from will create a void in the cast
+            part. Small vent channels at the highest points of each mold half solve this.
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4>[Add knowledge points as learned each week]</h4>
+          <p>This list will grow as the project progresses through Weeks 2–9.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- SECTION 05: NOTES & REFLECTION ---- -->
+    <section class="content-section" id="notes">
+      <p class="content-section-label">
+        <span class="content-section-num">05</span> Notes &amp; Reflection
+      </p>
+      <h2 class="content-section-title">Ongoing notes</h2>
+
+      <div class="notes-section-inner">
+        <div class="notes-content">
+          <p class="notes-date">Week 2 – 10 · Spring 2026 · Updated weekly</p>
+
+          <p style="color:var(--text-light); font-style:italic;">
+            [Personal notes and weekly reflections will be added here as the project progresses.]
+          </p>
+
+          <ul class="reflection-list" style="margin-top: 24px;">
+            <li>
+              <span class="reflection-icon">→</span>
+              <span><strong>Week 2:</strong> [Add notes]</span>
+            </li>
+            <li>
+              <span class="reflection-icon">→</span>
+              <span><strong>Week 3:</strong> [Add notes]</span>
+            </li>
+            <li>
+              <span class="reflection-icon">→</span>
+              <span><strong>Week 4:</strong> [Add notes]</span>
+            </li>
+            <li>
+              <span class="reflection-icon">→</span>
+              <span><strong>Weeks 5–10:</strong> [Add as completed]</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Back link bottom -->
+    <a href="../../index.html" class="back-link" style="border-top: 1px solid var(--border-light); border-bottom: none; margin-top: 20px; padding: 20px 0;">
+      <span class="arrow">←</span> Back to all projects
+    </a>
+
+  </main>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      TECHIN 600 · Independent Study · Spring 2026<br>
+      Yutong Luo · University of Washington MSTI
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/TongSUE/TECHIN-600-Spring2026" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.776.42-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/rough-notation.js"></script>
+<script src="../../assets/js/annotations.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
