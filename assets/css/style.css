@@ -781,6 +781,16 @@ blockquote {
 
 .photo-caption { font-family: var(--font-mono); font-size: 0.66rem; color: var(--text-light); margin-top: 8px; }
 
+.photo-grid figure { margin: 0; }
+.photo-grid figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.63rem;
+  color: var(--text-light);
+  margin-top: 6px;
+  line-height: 1.45;
+  padding: 0 2px;
+}
+
 /* Knowledge cards */
 .knowledge-list { display: flex; flex-direction: column; gap: 12px; }
 

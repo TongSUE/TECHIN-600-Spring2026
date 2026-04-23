@@ -21,7 +21,7 @@ const MARK_STAGGER       = 150;
 
 const MARK_CONFIG = {
   'mark-circle':    { type: 'circle',         strokeWidth: 2,   padding: [2, 4]             },
-  'mark-highlight': { type: 'highlight',       strokeWidth: 0,   padding: 2,  alpha: 0.35   },
+  'mark-highlight': { type: 'highlight',       strokeWidth: 0,   padding: 2,  alpha: 0.35, roughness: 0.4 },
   'mark-underline': { type: 'underline',       strokeWidth: 2.2, padding: 4                  },
   'mark-wave':      { type: 'underline',       strokeWidth: 2,   padding: 4,  roughness: 3.5 },
   'mark-box':       { type: 'box',             strokeWidth: 1.8, padding: 8                  },
