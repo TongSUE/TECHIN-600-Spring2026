@@ -107,12 +107,6 @@ code {
 .reveal-children.visible > *:nth-child(4) { animation-delay: 0.26s; }
 .reveal-children.visible > *:nth-child(5) { animation-delay: 0.33s; }
 
-.content-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
-}
-.content-section.visible { opacity: 1; transform: translateY(0); }
 
 .step {
   opacity: 0;
@@ -129,8 +123,8 @@ code {
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-light);
   transition: box-shadow var(--transition);
 }
@@ -272,6 +266,8 @@ code {
 
 .overview-text { font-size: 0.97rem; line-height: 1.85; color: var(--text-muted); }
 .overview-text strong { color: var(--text); }
+.overview-text + .overview-text { margin-top: 14px; }
+.overview-grid .section-label { margin-bottom: 12px; }
 
 .overview-goals { list-style: none; }
 .overview-goals li {
@@ -297,6 +293,7 @@ code {
   margin-bottom: 44px;
 }
 .projects-header h2 { font-family: var(--font-display); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; }
+.projects-header p { font-size: 0.85rem; color: var(--text-muted); }
 
 .projects-grid {
   display: grid;
@@ -612,6 +609,49 @@ code {
   gap: 8px;
 }
 .content-section-num { color: var(--accent); font-weight: 500; }
+
+/* Part A / Part B sub-section headings inside process */
+.process-part-heading {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+  padding: 44px 0 22px;
+  border-top: 1px solid var(--border);
+}
+.process-part-heading:first-child { padding-top: 0; border-top: none; }
+.process-part-heading + .step { border-top: none; padding-top: 16px; }
+.process-part-heading-letter {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--accent);
+  line-height: 1;
+  text-align: center;
+  padding-top: 3px;
+}
+.process-part-heading p { margin: 0; line-height: 1.65; }
+.process-part-heading .part-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 5px;
+}
+.process-part-heading h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  line-height: 1.2;
+  margin: 0 0 9px;
+}
+.process-part-heading .part-desc { font-size: 0.87rem; color: var(--text-muted); }
+
+/* Invisible step number (used for intro paragraphs without a number) */
+.step-num--ghost { visibility: hidden; }
 
 .content-section-title {
   font-family: var(--font-display);

@@ -25,7 +25,6 @@ function assignCardRotations() {
 /* --- Scroll Reveal --- */
 function initScrollReveal() {
   const reveals = document.querySelectorAll('.reveal, .reveal-children');
-  const sections = document.querySelectorAll('.content-section');
   const steps    = document.querySelectorAll('.step');
   const cards    = document.querySelectorAll('.project-card');
 
@@ -51,7 +50,7 @@ function initScrollReveal() {
     });
   }, { threshold: 0.08, rootMargin: '0px 0px -36px 0px' });
 
-  [...reveals, ...sections, ...steps, ...cards].forEach(el => observer.observe(el));
+  [...reveals, ...steps, ...cards].forEach(el => observer.observe(el));
 }
 
 /* --- Sticky Header Shadow --- */
