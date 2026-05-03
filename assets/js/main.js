@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLightbox();
   initSidebarNav();
   initReadingProgress();
+  initLangToggle();
 });
 
 /* --- Assign slight random tilt to each card (scattered-notes effect) --- */
@@ -127,6 +128,38 @@ function initSidebarNav() {
   }, { rootMargin: '-20% 0px -70% 0px' });
 
   sections.forEach(s => observer.observe(s));
+}
+
+/* --- Language Toggle --- */
+function initLangToggle() {
+  const btn = document.querySelector('.lang-toggle');
+  if (!btn) return;
+  const saved = localStorage.getItem('lang') || 'en';
+  if (saved === 'zh') {
+    document.body.classList.add('zh');
+    document.documentElement.lang = 'zh';
+    btn.textContent = 'EN';
+    applyCaptionLang('zh');
+  }
+  btn.addEventListener('click', () => {
+    const isZh = document.body.classList.toggle('zh');
+    const lang = isZh ? 'zh' : 'en';
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
+    btn.textContent = isZh ? 'EN' : '中文';
+    applyCaptionLang(lang);
+  });
+}
+
+function applyCaptionLang(lang) {
+  document.querySelectorAll('[data-caption-zh]').forEach(el => {
+    if (lang === 'zh') {
+      if (!el.dataset.captionEn) el.dataset.captionEn = el.dataset.caption;
+      el.dataset.caption = el.dataset.captionZh;
+    } else {
+      if (el.dataset.captionEn) el.dataset.caption = el.dataset.captionEn;
+    }
+  });
 }
 
 /* --- Reading Progress Bar --- */

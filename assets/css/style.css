@@ -42,6 +42,11 @@
   --transition-slow: 0.5s var(--ease-out);
 }
 
+/* --- Language toggle visibility --- */
+.lang-zh { display: none; }
+body.zh .lang-en { display: none; }
+body.zh .lang-zh { display: revert; }
+
 /* --- Reset & Base --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -169,6 +174,26 @@ code {
 .nav-links a:hover::after,
 .nav-links a.active::after { width: 100%; }
 .nav-links a.active { color: var(--accent); }
+
+.lang-toggle {
+  font-family: var(--font-mono);
+  font-size: 0.70rem;
+  letter-spacing: 0.06em;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+  white-space: nowrap;
+  line-height: 1.5;
+}
+.lang-toggle:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent);
+}
 
 /* ============================================
    HOME HERO
