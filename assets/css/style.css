@@ -42,8 +42,10 @@
   --transition-slow: 0.5s var(--ease-out);
 }
 
-/* --- Language toggle visibility --- */
-.lang-zh { display: none; }
+/* --- Language toggle visibility ---
+   Use body:not(.zh) for higher specificity so element-level display rules
+   (e.g. .overview-goals li { display: flex }) can't override the hide. */
+body:not(.zh) .lang-zh { display: none; }
 body.zh .lang-en { display: none; }
 body.zh .lang-zh { display: revert; }
 
@@ -1114,6 +1116,7 @@ blockquote {
   .footer-inner { flex-direction: column; gap: 12px; align-items: flex-start; }
   .back-link { padding: 16px 20px; }
   .projects-header { flex-direction: column; gap: 8px; }
-  .nav-links { display: none; }
+  .nav-links { display: flex; }
+  .nav-links li:not(:last-child) { display: none; }
   .notes-section-inner { padding: 24px 20px; }
 }
