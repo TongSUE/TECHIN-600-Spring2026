@@ -69,6 +69,10 @@
         <a href="#process">
           <span class="sidebar-nav-num">02</span> Process
         </a>
+        <ul class="sidebar-subnav">
+          <li><a href="#process-a">A — Phone Case</a></li>
+          <li><a href="#process-b">B — ESP32 Container</a></li>
+        </ul>
       </li>
       <li>
         <a href="#knowledge">
@@ -131,7 +135,7 @@
       <div class="process-steps">
 
         <!-- ====== PART A ====== -->
-        <div class="process-part-heading">
+        <div class="process-part-heading" id="process-a">
           <div class="process-part-heading-letter">A</div>
           <div>
             <p class="part-tag">Part A</p>
@@ -145,8 +149,7 @@
           <div class="step-num">1</div>
           <div class="step-body">
             <h4>Round 2 — Double color attempt</h4>
-            <p><strong>What went wrong in Round 1.</strong> The bottom came out too thick, and there was a large air bubble inside. Kevin pointed out two issues: the top mold half was slightly thin and deformed under the liquid resin. And I had been pressing the mold closed <span class="mark-highlight">straight down</span> — which traps air in the middle instead of pushing it out.</p>
-            <p><strong>New plan.</strong> Fix the closure technique, and try a two-color swirl — white and gold glitter on one side, pink and red (with a touch of white glitter for the transition) on the other.</p>
+            <p><strong>Before the pour.</strong> Round 1 left the bottom too thick. Kevin's advice for Round 2: <span class="mark-highlight">squeeze the mold halves together hard enough to let excess resin overflow</span> — that's how you get consistent wall thickness. I also wanted to try a two-color swirl this time: white and gold glitter on one side, pink and red (with a touch of white glitter for the transition) on the other.</p>
             <div class="photo-grid">
               <figure>
                 <div class="photo-item" data-caption="White and gold glitter mix">
@@ -161,7 +164,7 @@
                 <figcaption>Rose + red glitter mix</figcaption>
               </figure>
             </div>
-            <p><strong>The pour.</strong> 2 oz total (1 oz per color) to avoid the previous overflow. After pouring, I pressed the halves together more firmly and placed a clay weight on top to hold steady pressure during the cure.</p>
+            <p><strong>The pour.</strong> 2 oz total (1 oz per color) to avoid the previous overflow. After pouring, I pressed the halves together firmly, let excess resin spill out, and placed a clay weight on top to hold steady pressure during the cure.</p>
             <div class="photo-grid">
               <figure>
                 <div class="photo-item" data-caption="Both resin colors poured into the mold">
@@ -176,10 +179,10 @@
                 <figcaption>Clay weight for consistent pressure</figcaption>
               </figure>
             </div>
-            <p><strong>The result.</strong> Thickness: much better. Color blend: beautiful. Bubbles: still a lot. I think pouring from both sides and then pressing <span class="mark-highlight">straight down</span> still trapped air in the middle. The bubble problem wasn't solved yet.</p>
+            <p><strong>The result.</strong> Thickness: much better. Color blend: beautiful. Bubbles: still a lot. After seeing the result, Kevin pointed out I had been pressing the mold closed <span class="mark-highlight">straight down</span> — which traps air in the middle instead of pushing it out. The top mold half also being a bit thin might not have helped. The bubble problem wasn't solved yet.</p>
             <div class="photo-grid photo-grid--1">
               <figure>
-                <div class="photo-item" data-caption="Round 2 result — good color blend but too many bubbles">
+                <div class="photo-item photo-item--portrait" data-caption="Round 2 result — good color blend but too many bubbles">
                   <img src="../../assets/images/02-silicone-mold-II/double-color-result.png" alt="Round 2 result showing color blend and bubble defects" loading="lazy" />
                 </div>
                 <figcaption>Round 2 — great color, too many bubbles</figcaption>
@@ -198,7 +201,7 @@
             <p><strong>The result.</strong> A clean aurora gradient — white, green, blue, purple. One miss: I forgot to mix white glitter into the non-white colors, so those sections have less pearlescent shimmer and the transitions look slightly abrupt. Still a big improvement overall.</p>
             <div class="photo-grid photo-grid--1">
               <figure>
-                <div class="photo-item" data-caption="Round 3 result — aurora gradient, almost no bubbles">
+                <div class="photo-item photo-item--portrait" data-caption="Round 3 result — aurora gradient, almost no bubbles">
                   <img src="../../assets/images/02-silicone-mold-II/four-color-result.png" alt="Round 3 phone case with aurora color gradient" loading="lazy" />
                 </div>
                 <figcaption>Round 3 — aurora gradient, nearly bubble-free</figcaption>
@@ -208,12 +211,12 @@
         </div>
 
         <!-- ====== PART B ====== -->
-        <div class="process-part-heading">
+        <div class="process-part-heading" id="process-b">
           <div class="process-part-heading-letter">B</div>
           <div>
             <p class="part-tag">Part B</p>
             <h3>ESP32 Container Mold</h3>
-            <p class="part-desc">While the phone case iterations were ongoing, Kevin suggested trying a second object in parallel — an ESP32 component container. Small enough to fit inside the vacuum chamber with resin inside, and with threaded geometry to test dimensional accuracy. This also introduced two new things: a proper vent and sprue system, and polyurethane resin.</p>
+            <p class="part-desc">While the phone case iterations were ongoing, Kevin suggested picking a new object to mold — something smaller that could fit inside the vacuum chamber with resin inside. I chose an ESP32 component container: small enough for the chamber, and with threaded geometry that would be a good test for dimensional accuracy. This also introduced two new things: a proper vent and sprue system, and polyurethane resin.</p>
           </div>
         </div>
 
@@ -239,7 +242,7 @@
           <div class="step-body">
             <h4>Bottom mold half</h4>
             <p><strong>Same process as before.</strong> Mold box, clay fill, registration strips, mix and degas silicone, pour, wait overnight. No new techniques — just a different shape.</p>
-            <p><strong>Calculation error.</strong> The box footprint was smaller than the phone case box, so I assumed I'd need less silicone. Wrong — the container is much taller, and <span class="mark-underline">volume scales with height, not footprint area</span>. I ran out mid-pour.</p>
+            <p><strong>Calculation error.</strong> The box footprint was smaller than the phone case box, so I assumed I'd need less silicone. Wrong — the container is much taller, and <span class="mark-underline">the height increase more than offset the smaller footprint, giving a larger total volume than I expected</span>. I ran out mid-pour.</p>
             <div class="photo-grid photo-grid--1">
               <figure>
                 <div class="photo-item" data-caption="Silicone fell short — had to mix and add more">
@@ -271,7 +274,7 @@
           <div class="step-num">4</div>
           <div class="step-body">
             <h4>Top mold half — vent and sprue design</h4>
-            <p><strong>Why vents are needed.</strong> The phone case mold was open — you just overfill and squeeze. This container mold is closed. Without somewhere for air to escape, air pressure blocks the resin fill. The system: <span class="mark-underline">a sprue at the lowest point to let resin in, vents at the highest points so air can exit</span>.</p>
+            <p><strong>Why vents are needed.</strong> The phone case mold has no vents — the workaround is to overfill and squeeze the excess out. It gets the job done, but it is a workaround, not good mold design, and it only works because the mold is open. The container mold is closed: there is no way to squeeze, and without a vent, trapped air would block the resin fill entirely. The solution: <span class="mark-underline">a sprue at the lowest point to inject resin in, vents at the highest points so air can escape as the resin rises</span>.</p>
             <p><strong>Attaching the vent cores.</strong> I needed to attach a toothpick (vent core) and a slightly thicker stick (sprue core) to the container before the second silicone pour. After curing and removal, these leave the channels behind. The challenge: the container walls are extremely thin, so the contact area for adhesion is tiny.</p>
             <p><strong>Superglue + activator.</strong> Kevin's technique for bonding small items to smooth plastic: superglue cures slowly on its own; activator spray makes it <span class="mark-highlight">bond in seconds</span>. His key rule: <span class="mark-wave">don't spray the activator directly onto the joint — dab it on with a small brush</span>. More control, less mess. I practiced on scrap first.</p>
             <div class="photo-grid photo-grid--1">
@@ -290,7 +293,7 @@
                 <figcaption>Vent (toothpick) and sprue (stick) cores attached</figcaption>
               </figure>
             </div>
-            <p><strong>Second pour.</strong> Applied vaseline to the exposed silicone half, rebuilt the mold box, poured the second half. Another overnight wait.</p>
+            <p><strong>Second pour.</strong> Applied vaseline to the exposed silicone half, rebuilt the mold box, then poured the silicone very slowly and close to the surface — <span class="mark-highlight">the toothpick and stick are only attached by a tiny contact area, and a heavy pour could knock them over</span>. Kevin said if they fall, there's not much you can do except re-attach and hope the next pour covers it. Another overnight wait.</p>
             <div class="photo-grid photo-grid--1">
               <figure>
                 <div class="photo-item" data-caption="Mold box rebuilt for the second silicone pour">
@@ -344,7 +347,7 @@
           <div class="step-num">5</div>
           <div class="step-body">
             <h4>First cast — learning polyurethane resin</h4>
-            <p><strong>Why polyurethane.</strong> Epoxy resin is viscous — fine for open molds, but too thick to flow through a small sprue. Kevin introduced polyurethane resin: also A+B, <span class="mark-circle">1:1 by volume</span>, but much thinner. It flows easily and cures opaque white.</p>
+            <p><strong>Why polyurethane.</strong> Epoxy resin is viscous — fine for open molds, but too thick to flow through a small sprue. Kevin introduced polyurethane resin: also A+B, <span class="mark-circle">1:1 by volume or weight (both work)</span>, but much thinner. It flows easily and cures opaque white.</p>
             <div class="photo-grid photo-grid--1">
               <figure>
                 <div class="photo-item" data-caption="Polyurethane resin — Part A and Part B">
@@ -353,8 +356,17 @@
                 <figcaption>Polyurethane resin — A and B parts</figcaption>
               </figure>
             </div>
-            <p><strong>The critical difference: work time.</strong> Epoxy gives 15–30 minutes. Polyurethane gives <span class="mark-highlight">2–3 minutes</span>, with full cure in 10–15. No time to degas. You must have everything ready — mold in position, workspace clear, channels carved — <em>before</em> mixing A and B. Also: don't overmix. Excess agitation accelerates the reaction and heats the resin fast.</p>
-            <p><strong>First attempt: overmixed.</strong> I lost track of mixing time. The resin started turning white before I finished pouring — most of it <span class="mark-highlight">hardened in the cup</span>.</p>
+            <p><strong>The critical difference: work time.</strong> Epoxy gives 15–30 minutes. Polyurethane gives <span class="mark-highlight">2–3 minutes</span>, with full cure in 10–15. No time to degas. You must have everything ready — mold in position, workspace clear, channels carved — <em>before</em> mixing A and B. Also: don't overmix. Excess agitation accelerates the exothermic reaction and the resin heats up fast.</p>
+            <div class="callout callout--safety">
+              <div class="callout-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="15" r="4"/><circle cx="18" cy="15" r="4"/><path d="M2 15h4"/><path d="M20 15h2"/><path d="M10 15c0-1.1.9-2 2-2s2 .9 2 2"/></svg>
+              </div>
+              <div class="callout-body">
+                <strong>Safety — wear goggles</strong>
+                Polyurethane resin is thin and splashes easily. The A+B reaction also releases significant heat. Always wear safety goggles, especially when injecting into a small opening under time pressure.
+              </div>
+            </div>
+            <p><strong>First attempt: overmixed.</strong> I tried to move quickly, but <span class="mark-highlight">overmixing cut the already-short work time even further</span>. The resin started turning white before I finished pouring — most of it <span class="mark-highlight">hardened in the cup</span>.</p>
             <div class="photo-grid">
               <figure>
                 <div class="photo-item" data-caption="First attempt — resin started curing before I finished pouring">
@@ -369,19 +381,19 @@
                 <figcaption>Wasted in the cup</figcaption>
               </figure>
             </div>
-            <p><strong>Second problem: the convex lip.</strong> Even when resin reached the opening, surface tension makes the silicone around vent holes slightly raised — a tiny convex rim. Resin just pooled on top of the entrance instead of flowing in.</p>
+            <p><strong>Second problem: the convex lip.</strong> Surface tension makes the silicone around vent holes slightly raised — a tiny convex rim. Resin couldn't get past it; almost none entered the mold at all. What did make it in wasn't nearly enough to fill the cavity.</p>
             <div class="photo-grid">
               <figure>
-                <div class="photo-item" data-caption="Resin pooling at the raised vent lip — couldn't flow past">
-                  <img src="../../assets/images/02-silicone-mold-II/fail-2.jpg" alt="Resin pooling at raised vent lip" loading="lazy" />
+                <div class="photo-item" data-caption="Barely any resin entered the mold — blocked by the convex vent lip">
+                  <img src="../../assets/images/02-silicone-mold-II/fail-2.jpg" alt="Almost no resin entered the mold" loading="lazy" />
                 </div>
-                <figcaption>Raised lip — resin pooling on top</figcaption>
+                <figcaption>Almost no resin entered — blocked at the opening</figcaption>
               </figure>
               <figure>
-                <div class="photo-item" data-caption="Resin accumulating on the surface, barely entering the mold">
-                  <img src="../../assets/images/02-silicone-mold-II/fail-3.png" alt="Resin accumulating on mold surface" loading="lazy" />
+                <div class="photo-item" data-caption="Demolded result — a shapeless clump of hardened resin fragments">
+                  <img src="../../assets/images/02-silicone-mold-II/fail-3.png" alt="Demolded result: shapeless clump of resin fragments" loading="lazy" />
                 </div>
-                <figcaption>Surface accumulation — barely inside</figcaption>
+                <figcaption>Demolded result — a shapeless clump</figcaption>
               </figure>
             </div>
           </div>
@@ -416,16 +428,20 @@
                 <figcaption>Successful fill</figcaption>
               </figure>
             </div>
+            <p>This time I didn't overmix. 2–3 minutes sounds short, but it was enough to act. After filling, I gently squeezed the mold — a tiny thread of resin overflowed from the vent, which meant the cavity was full. Ten minutes later, I demolded a successful cast.</p>
+            <p>After trimming the sprues, the threads came out crisp — I could actually screw the lid onto the container and it closed. The walls are slightly thinner than the original, and the threads engage but don't lock firmly.</p>
+            <p><strong>Why undersized?</strong> Silicone shrinks slightly when curing — typically 0.1–1% depending on the type. The bottom mold has a concave cavity (凹): when the silicone contracts inward, that cavity gets smaller, so the cast outer walls come out marginally thinner than the original. The top mold has more solid silicone mass surrounding the lid geometry (凸): its shrinkage is distributed through that bulk, with less effect on the actual cavity dimensions. Small overall, but noticeable at thread scale.</p>
             <div class="photo-grid photo-grid--1">
               <figure>
                 <div class="photo-item" data-caption="Finished ESP32 container cast in polyurethane resin">
                   <img src="../../assets/images/02-silicone-mold-II/container-result.png" alt="Finished ESP32 container cast in polyurethane resin" loading="lazy" />
                 </div>
-                <figcaption>Finished container — polyurethane resin</figcaption>
+                <figcaption>Finished container — threads clear, lid screws on</figcaption>
               </figure>
             </div>
+            <p><strong>One visible issue: bubbles.</strong> Kevin mentioned this is hard to avoid with polyurethane — the 2–3 minute window leaves no time for vacuum degassing. There are more specialized machines that mix under vacuum and inject directly into the mold, but that's industrial-grade equipment GIX doesn't have. Going forward I might try injecting epoxy through a syringe, casting inside the vacuum chamber, or something else to revisit this mold.</p>
             <p><strong>Bonus: leftover resin.</strong> I poured the remaining polyurethane into the idle phone case mold. Demolded it <span class="mark-highlight">a bit too early</span> — one edge hadn't set, stuck to itself. Still mostly fine.</p>
-            <p>The feel of polyurethane is different from epoxy: harder, more brittle, almost like ivory. Thin sections are still flexible.</p>
+            <p>The feel is noticeably different from the epoxy phone cases: harder, more brittle, almost like ivory. For these specific products that observation is correct — rigid fast-cure polyurethane (stiff and opaque by design) versus a flexible art-casting epoxy formulated for clarity and some give. Worth noting: this is not a general material rule. Engineering epoxies are often far harder and more brittle than structural polyurethanes, and polyurethane ranges from soft foam to rigid plastic depending on formulation. It's product-specific, not material-type-specific.</p>
             <div class="photo-grid photo-grid--1">
               <figure>
                 <div class="photo-item" data-caption="Phone case cast from leftover polyurethane — opaque white">
@@ -495,13 +511,21 @@
       </p>
       <h2 class="content-section-title">What I took away</h2>
 
-      <!-- Hero image outside ruled area -->
+      <!-- Hero images outside ruled area -->
       <div class="photo-grid photo-grid--1">
         <figure>
           <div class="photo-item" data-caption="Finished ESP32 container cast in polyurethane resin">
             <img src="../../assets/images/02-silicone-mold-II/container-result.png" alt="Finished polyurethane ESP32 container cast" loading="lazy" />
           </div>
           <figcaption>The ESP32 container cast — first successful polyurethane result</figcaption>
+        </figure>
+      </div>
+      <div class="photo-grid photo-grid--1">
+        <figure>
+          <div class="photo-item photo-item--full" data-caption="Close-up of all four phone case casts">
+            <img src="../../assets/images/02-silicone-mold-II/phonecases-3.jpg" alt="Close-up of all four phone case casts" loading="lazy" />
+          </div>
+          <figcaption>All four phone case casts</figcaption>
         </figure>
       </div>
 
@@ -526,7 +550,7 @@
             obvious in hindsight. I just needed to fail once to actually do it.
           </p>
 
-          <div class="photo-grid photo-grid--3">
+          <div class="photo-grid">
             <figure>
               <div class="photo-item" data-caption="All four phone case casts — side view">
                 <img src="../../assets/images/02-silicone-mold-II/phonecases-1.png" alt="All four phone case casts from side" loading="lazy" />
@@ -538,12 +562,6 @@
                 <img src="../../assets/images/02-silicone-mold-II/phonecases-2.png" alt="All four phone case casts laid out" loading="lazy" />
               </div>
               <figcaption>Laid out together</figcaption>
-            </figure>
-            <figure>
-              <div class="photo-item" data-caption="Close-up detail of the phone case collection">
-                <img src="../../assets/images/02-silicone-mold-II/phonecases-3.jpg" alt="Close-up of phone case cast collection" loading="lazy" />
-              </div>
-              <figcaption>Detail view</figcaption>
             </figure>
           </div>
 
@@ -561,6 +579,18 @@
               <span><strong>What this taught me for the main project:</strong> Vent and sprue design is not optional for closed molds. Always test a new material with a quick trial before committing to the real thing. Fast-curing materials need a very deliberate setup step before any mixing happens.</span>
             </li>
           </ul>
+
+          <div class="idea-card">
+            <div class="idea-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>
+            </div>
+            <div class="idea-card-body">
+              <h5>Idea — TECHIN 515 Final Model via 3D Print + Resin Casting</h5>
+              <p>For the TECHIN 515 group project final model, I'm thinking about combining 3D printing and resin casting: epoxy resin for transparent or translucent parts (lenses, windows, display covers), polyurethane resin for white opaque structural parts. The two-part silicone mold workflow from this quarter makes it feasible — I just need to design the molds and part geometry to be compatible with casting.</p>
+              <p>Would be worth discussing with Kevin whether this is in scope for the final deliverable, and which resin type is the right call for each component depending on finishing, assembly, and tolerance requirements.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
