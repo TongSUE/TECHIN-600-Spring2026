@@ -645,6 +645,7 @@ code {
 .content-section { padding: 60px 0; border-bottom: 1px solid var(--border-light); }
 .content-section:last-of-type { border-bottom: none; }
 
+a.content-section-label { text-decoration: none; }
 .content-section-label {
   font-family: var(--font-mono);
   font-size: 0.63rem;
