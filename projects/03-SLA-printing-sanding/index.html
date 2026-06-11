@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 03: AuraSync — Enclosure Fabrication · TECHIN 600</title>
+  <meta name="description" content="Fabricating the AuraSync enclosure: frosted resin lid via silicone mold casting, white base via SLA printing. Week 6–8 of TECHIN 600 Independent Study." />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="project-page">
+
+<!-- Reading Progress -->
+<div class="reading-progress"><div class="reading-progress-bar"></div></div>
+
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <nav class="container site-nav">
+    <a href="../../index.html" class="nav-logo">
+      <span class="nav-logo-main">TECHIN 600</span>
+      <span class="nav-logo-sub">Spring 2026 · Process Book</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../../index.html#overview"><span class="lang-en">Overview</span><span class="lang-zh">概述</span></a></li>
+      <li><a href="../../index.html#projects"><span class="lang-en">Projects</span><span class="lang-zh">项目</span></a></li>
+      <li><a href="https://github.com/TongSUE/TECHIN-600-Spring2026" target="_blank" rel="noopener">GitHub ↗</a></li>
+      <li><button type="button" class="lang-toggle">中文</button></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Back link -->
+<a href="../../index.html" class="back-link">
+  <span class="arrow">←</span> <span class="lang-en">All Projects</span><span class="lang-zh">所有项目</span>
+</a>
+
+<!-- ====== PROJECT HERO ====== -->
+<section class="project-hero">
+  <div class="container">
+    <p class="project-hero-kicker"><span class="lang-en">Project 03 · Week 6 – 8</span><span class="lang-zh">项目 03 · 第 6 – 8 周</span></p>
+    <h1 class="project-hero-title">
+      <span class="lang-en">AuraSync:<br>Enclosure Fabrication</span>
+      <span class="lang-zh">AuraSync——<br>外壳制作</span>
+    </h1>
+    <p class="project-hero-subtitle">
+      <span class="lang-en">Frosted resin lid via silicone mold casting, white base via SLA printing — and a fair number of things going wrong along the way</span>
+      <span class="lang-zh">硅胶翻模制作磨砂树脂上盖，SLA打印白色底座——以及一路上不少出错的地方</span>
+    </p>
+    <div class="project-hero-meta">
+      <span class="meta-tag"><span><span class="lang-en">Status</span><span class="lang-zh">状态</span></span> <span class="lang-en">Complete</span><span class="lang-zh">已完成</span></span>
+      <span class="meta-tag"><span><span class="lang-en">Method</span><span class="lang-zh">方法</span></span> <span class="lang-en">Single-piece silicone mold + SLA</span><span class="lang-zh">单体硅胶模具 + SLA打印</span></span>
+      <span class="meta-tag"><span><span class="lang-en">Cast</span><span class="lang-zh">浇铸材料</span></span> <span class="lang-en">Epoxy resin</span><span class="lang-zh">环氧树脂</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- Cover photo -->
+<div class="project-cover">
+  <img src="../../assets/images/03-SLA-printing-sanding/final-model.jpg" alt="AuraSync enclosure — frosted resin lid and white SLA-printed base" />
+</div>
+
+<!-- ====== MAIN LAYOUT ====== -->
+<div class="project-layout">
+
+  <!-- Sidebar Nav -->
+  <aside class="project-sidebar">
+    <ul class="sidebar-nav">
+      <li>
+        <a href="#overview" class="active">
+          <span class="sidebar-nav-num">01</span> <span class="lang-en">Overview</span><span class="lang-zh">概述</span>
+        </a>
+      </li>
+      <li>
+        <a href="#process">
+          <span class="sidebar-nav-num">02</span> <span class="lang-en">Process</span><span class="lang-zh">制作过程</span>
+        </a>
+        <ul class="sidebar-subnav">
+          <li><a href="#process-a"><span class="lang-en">A — Transparent Lid</span><span class="lang-zh">A — 透明上盖</span></a></li>
+          <li><a href="#process-b"><span class="lang-en">B — White Base</span><span class="lang-zh">B — 白色底座</span></a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#knowledge">
+          <span class="sidebar-nav-num">03</span> <span class="lang-en">Knowledge</span><span class="lang-zh">知识点</span>
+        </a>
+      </li>
+      <li>
+        <a href="#notes">
+          <span class="sidebar-nav-num">04</span> <span class="lang-en">Notes</span><span class="lang-zh">笔记</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Content -->
+  <main class="project-content">
+
+    <!-- ---- SECTION 01: OVERVIEW ---- -->
+    <section class="content-section" id="overview">
+      <p class="content-section-label">
+        <span class="content-section-num">01</span> <span class="lang-en">Overview</span><span class="lang-zh">概述</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">Bringing the Independent Study into TECHIN 515</span><span class="lang-zh">把独立研究和515项目结合起来</span></h2>
+
+      <p class="lang-en">
+        For Phase 3, I decided to combine the Independent Study with work from another course. The chosen project is the TECHIN 515 Team Project: <strong>AuraSync</strong> — a desktop device with a diffuse LED glow effect.
+        The enclosure needed two parts made with two different methods: a frosted transparent lid, and a white base.
+      </p>
+      <p class="lang-zh">
+        第三阶段，我打算把独立研究和其他课程里的项目结合起来。我选择了TECHIN 515的Team Project：<strong>AuraSync</strong>——一个带有漫射LED光效的桌面设备。
+        外壳需要用两种方法分别制作两个部分：磨砂透明上盖，以及白色底座。
+      </p>
+      <p class="lang-en">
+        The lid needs a frosted glass effect so the internal LED light diffuses softly through it. We went with 3D print + silicone mold + clear resin casting + sanding.
+        The base went to SLA printing for its better precision and surface quality.
+      </p>
+      <p class="lang-zh">
+        上盖需要磨砂玻璃质感，使内部LED灯光柔和透出，我们选择了3D打印+硅胶模具+透明树脂翻模+打磨的工艺。
+        底座则选用SLA打印，精度更高，表面质量也更好。
+      </p>
+
+      <p class="content-section-label"><span class="lang-en">Materials Used</span><span class="lang-zh">使用材料</span></p>
+      <div class="overview-materials">
+        <span class="material-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6m-6 0v6l-4.5 9A2 2 0 0 0 6.3 21h11.4a2 2 0 0 0 1.8-3L15 9V3"/><line x1="6.7" y1="15" x2="17.3" y2="15"/></svg>
+          <span class="lang-en">Silicone</span><span class="lang-zh">硅胶</span>
+        </span>
+        <span class="material-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          <span class="lang-en">Epoxy Resin</span><span class="lang-zh">环氧树脂</span>
+        </span>
+        <span class="material-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+          <span class="lang-en">SLA Resin (water-washable white)</span><span class="lang-zh">SLA树脂（可水洗白色）</span>
+        </span>
+        <span class="material-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <span class="lang-en">PLA (master model)</span><span class="lang-zh">PLA（母模）</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- ---- SECTION 02: PROCESS ---- -->
+    <section class="content-section" id="process">
+      <p class="content-section-label">
+        <span class="content-section-num">02</span> <span class="lang-en">Process</span><span class="lang-zh">制作过程</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">Step by step</span><span class="lang-zh">制作步骤</span></h2>
+
+      <div class="process-steps">
+
+        <!-- ====== PART A ====== -->
+        <div class="process-part-heading" id="process-a">
+          <div class="process-part-heading-letter">A</div>
+          <div>
+            <p class="part-tag"><span class="lang-en">Part A</span><span class="lang-zh">第 A 部分</span></p>
+            <h3><span class="lang-en">Transparent Lid — Silicone Mold + Resin Casting</span><span class="lang-zh">透明上盖——硅胶翻模</span></h3>
+            <p class="part-desc lang-en">The lid is the transparent section of the enclosure. The goal is a frosted glass effect so the internal LEDs diffuse softly through it. After consulting Kevin, we ruled out SLA printing for transparent parts (it works but involves some extra steps, as Kevin put it — "a detour, but solvable") and went with 3D print + silicone mold + clear resin casting + sanding instead. Kevin also reminded us to fillet the inner face of the lid — otherwise the interior corners are nearly impossible to sand.</p>
+            <p class="part-desc lang-zh">上盖是外壳的透明段，目标是磨砂玻璃质感，使内部LED灯光柔和透出。在询问Zubin的意见后，我们放弃了树脂SLA打印透明件（Zubin说会稍微绕弯，但能够解决），最终选择3D打印+硅胶模具+透明树脂翻模+打磨的工艺。Kevin也提醒我们为盖子的内面做一下圆角，不然打磨内面时很难触及转角处。</p>
+          </div>
+        </div>
+
+        <!-- Kevin's single-mold idea (ghost step / intro) -->
+        <div class="step">
+          <div class="step-num step-num--ghost">·</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Kevin's single-mold idea</span><span class="lang-zh">Kevin 分享的单体模思路</span></h4>
+            <p class="lang-en">
+              Kevin shared a <strong>single-piece mold</strong> approach: instead of a traditional two-part mold, you pour silicone directly around the master inside an outer box, while a placeholder structure inside the cavity displaces the bulk of the silicone — significantly cutting material use. It's a clever design, and we planned to follow it.
+            </p>
+            <p class="lang-zh">
+              Kevin分享了<strong>单体模</strong>思路：不采用传统两开模，而是在外箱内将硅胶直接浇注于母模周围，同时以内部占位结构排开大体积硅胶，显著降低材料用量。这是一个很巧妙的设计，我们准备参照这个思路进行翻模制作。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Kevin's single-piece mold concept" data-caption-zh="Kevin分享的单体模具思路">
+                  <img src="../../assets/images/03-SLA-printing-sanding/Kevin-shared-single-mold.png" alt="Kevin's single-piece mold concept diagram" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">The single-piece mold concept Kevin shared</span><span class="lang-zh">Kevin分享的单体模具思路</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Designing the silicone mold</span><span class="lang-zh">设计硅胶模具</span></h4>
+            <p class="lang-en">
+              With two previous sessions under our belts, making silicone molds felt almost routine. As it turned out, mold design still demands more experience than we had — and cutting corners is not an option. We made quite a few mistakes this round, which gave us a lot of recovery experience. Let me walk through them one by one.
+            </p>
+            <p class="lang-zh">
+              有了前面两次经验，硅胶模具制作似乎已经是驾轻就熟了。但事实证明模具设计还是需要更多的经验，并且偷不得懒。我们在本次制作模具的过程中犯了很多错误，这给了我们很多补救修正的经验，待我一一道来。
+            </p>
+            <p class="lang-en">
+              The lid is a thin-walled cylindrical cap with holes. We can't mold the holes directly — they would connect the two mold sections and lock the master in place, making it impossible to demold. The obvious fix: cover the holes with tape, so the silicone captures only a thin membrane over each hole that's easy to pop out afterward.
+            </p>
+            <p class="lang-zh">
+              上半的模具是一个带孔的薄壳圆柱盖子，我们不能直接翻模出带孔的模型，因为孔洞会导致两部分模具相连，锁死原件。应对方法也很显然：贴上胶带封闭孔洞，翻模后那里的硅胶壁很薄，便于手动扣出圆孔。
+            </p>
+            <p class="lang-en">
+              Following Kevin's single-piece mold concept, the mold needs to be suspended above the base: silicone seals the top and leaves an inlet for resin. Our design is shown below — but here's where we made the <strong>first mistake</strong>: to keep the center cylinder as thin as possible, we designed something like a champagne flute. We forgot about demolding entirely, and the shape created an <span class="mark-highlight">undercut</span>. That caused a lot of trouble later.
+            </p>
+            <p class="lang-zh">
+              我们参考Kevin给的单体模具设计，这种设计要求模具相对于底面悬空：硅胶能够封顶，并预留出树脂倒入的入口。我们做出的模具设计如图，但这时我们犯了<strong>第一个错误</strong>：为了让"需要切割的圆柱"尽量细，做了一个类似于高脚杯的结构，完全忽略了取出模具的合理性，造成了<span class="mark-highlight">undercut</span>，这给我们后面翻模带来了不少困难。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Our mold design — the champagne-flute shape that created an undercut" data-caption-zh="我们的模具设计——高脚杯形状造成了undercut">
+                  <img src="../../assets/images/03-SLA-printing-sanding/mold-design.jpg" alt="Mold design showing the undercut-prone champagne flute shape" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Our mold design — the undercut we didn't notice until it was too late</span><span class="lang-zh">我们的模具设计——直到很晚才发现的undercut</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Making the silicone mold</span><span class="lang-zh">制作硅胶模具</span></h4>
+            <p class="lang-en">
+              Same as before: cardboard outer box around the 3D-printed PLA master, silicone mixed to ratio and degassed in the vacuum chamber, then poured in to prevent bubbles.
+            </p>
+            <p class="lang-zh">
+              与之前一样，以硬纸板在3D打印PLA母模外搭建外箱，硅胶按比例调配后在真空腔中脱泡再灌注，防止气泡残留。
+            </p>
+            <p class="lang-en">
+              This is where we made the <strong>second mistake</strong>. The single-piece mold design requires an internal placeholder to be suspended inside the cavity while the silicone cures — displacing volume and saving material. Ideally this should be a 3D-printed piece with a rigid handle or crossbeam attached to the outer box, rough-surfaced and slightly flexible for easy demolding.
+            </p>
+            <p class="lang-zh">
+              这个时候我们犯了<strong>第二个错误</strong>：我们设计的单体模具需要在灌注硅胶的过程中使用合适的内部占位结构悬空在原件的空腔内。理论上应该使用一个带有固定结构（把手或横梁）的3D打印件，粗糙且有弹性，便于取出脱模。
+            </p>
+            <p class="lang-en">
+              To save time, we pressed a <strong>glass jar</strong> (with a wooden stick hot-glued across it as a crossbeam) into the wet silicone as the placeholder. Kevin had jokingly warned us he would <em>never</em> pick glass. We went ahead and used it anyway. Sure enough — after curing, <span class="mark-wave">the silicone bonded tightly to the smooth glass walls with no way to compress or deform the jar</span>. Getting it out was basically impossible.
+            </p>
+            <p class="lang-zh">
+              我们为了节省时间，选择将一只连有木片（热熔胶固定，当做横梁）的<strong>玻璃杯</strong>压入湿硅胶中央作为内部占位结构。Kevin曾经开玩笑警告过我们说"他绝对不会选玻璃"，但我们还是不怕死地用了。果然——<span class="mark-wave">硅胶固化后紧贴光滑玻璃壁形成强附着，而且玻璃没有弹性也难以压缩变形</span>，瓶子几乎无法取出。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The glass jar pressed into the wet silicone as internal placeholder" data-caption-zh="压入湿硅胶中央作为占位结构的玻璃杯">
+                  <img src="../../assets/images/03-SLA-printing-sanding/silicone-mold.jpg" alt="Glass jar used as internal silicone placeholder" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">The glass jar — Kevin's nightmare choice, and ours</span><span class="lang-zh">玻璃杯——Kevin警告过的那个选择，我们还是用了</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              With Kevin's help, we finally extracted the jar by injecting air with a syringe to break the vacuum seal. The PLA master was also stubborn to demold — the undercut from the design, plus the silicone wall being too thick to flex easily, plus no air gap between resin and master. In the end we had no choice but to do a <span class="mark-underline">wiggle cut</span> through the silicone to free the master. The upside: when you press the cut mold back together, it still seals reasonably well.
+            </p>
+            <p class="lang-zh">
+              最后在Kevin的帮助下，我们通过针管气泵注气打破密封，成功将玻璃瓶取出。3D打印的原件也脱模困难——因为设计造成的undercut，加上硅胶壁过厚不容易形变，以及树脂与原件之间无气隙。最后没有办法，只能用<span class="mark-underline">z字型切割</span>切割硅胶模具才将原件取出。好在这种切割方式原样合上后，还是能够做到某种程度上的密封。
+            </p>
+            <p class="lang-en">
+              The mold had one more issue: silicone ran short mid-pour. We filled the gaps with recycled silicone offcuts, but the scraps left 3–4 small voids and pitting defects in the mold surface. All fixable in post-processing.
+            </p>
+            <p class="lang-zh">
+              模具还有一个问题：硅胶不足，我们加入了回收的硅胶碎块填充，碎块和原件之间形成了一些空腔，导致模具有3–4个大大小小的凹陷孔洞缺陷。不过这些都可以通过后期处理解决！
+            </p>
+            <p class="lang-en">
+              With the mold done, we poured clear epoxy resin and waited. Because the part is thin, Kevin recommended waiting <span class="mark-highlight">48 hours</span> instead of the usual 24 — letting the resin harden fully before demolding to prevent unwanted distortion.
+            </p>
+            <p class="lang-zh">
+              接着我们灌入树脂进行翻模。因为模型比较薄，Kevin建议等待<span class="mark-highlight">48小时</span>使树脂完全干透、硬化，防止脱模时造成不需要的形变。
+            </p>
+            <div class="photo-grid">
+              <figure>
+                <div class="photo-item" data-caption="Waiting 48 hours for the resin to fully cure" data-caption-zh="等待48小时让树脂完全固化">
+                  <img src="../../assets/images/03-SLA-printing-sanding/resin-waiting.jpg" alt="Resin cast waiting 48 hours to cure" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Waiting for the resin — 48 hours this time</span><span class="lang-zh">等待树脂固化——这次48小时</span></figcaption>
+              </figure>
+              <figure>
+                <div class="photo-item" data-caption="The lid straight out of the mold, before any cutting or sanding" data-caption-zh="脱模后未经切割打磨的成品，效果其实已经相当不错">
+                  <img src="../../assets/images/03-SLA-printing-sanding/before.jpg" alt="Resin lid straight out of the mold, unsanded" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Straight out of the mold — already looking quite nice</span><span class="lang-zh">脱模后——效果其实就已经相当不错</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              The demolding itself was also a fight. For some reason the silicone mold stuck hard to the resin (something we hadn't encountered before) — we suspect it was the undercut voids acting as suction cups. We eventually had to cut the mold open and wrestle the resin part out.
+            </p>
+            <p class="lang-zh">
+              取出树脂模型也花了我们很大一番功夫。硅胶模具和树脂模型的黏连非常严重（之前没有遇到过），我们猜测是因为模具缺陷导致的undercut以及真空吸附问题。最后没有办法，我们切开了模具，花了九牛二虎之力取出了树脂模型。
+            </p>
+            <p class="lang-en">
+              But — the piece looked great even unfinished. The frosted quality was already satisfying.
+            </p>
+            <p class="lang-zh">
+              令我们欣慰的是，未经切割打磨的模型效果其实就已经相当不错！磨砂的质感令人相当满意。
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Cutting, drilling, and repair</span><span class="lang-zh">切割、钻孔与修复</span></h4>
+            <p class="lang-en">
+              Two finishing steps: trim the excess base with a band saw, then drill the misting port on top.
+            </p>
+            <p class="lang-zh">
+              翻模完成的树脂上盖需要两步收尾：用条锯裁去多余边缘，再在顶部钻出雾化口。
+            </p>
+            <p class="lang-en">
+              The band saw cut went fine — just keep the part clamped securely and stay safe.
+            </p>
+            <p class="lang-zh">
+              我们首先用小带锯进行了手动切割（去除用于使模型在硅胶中悬空的支撑圆柱）。这里要注意的就是做好模型的固定，注意安全即可。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Trimming excess material with the band saw" data-caption-zh="用小带锯切割去除多余材料">
+                  <img src="../../assets/images/03-SLA-printing-sanding/bandsaw.jpg" alt="Trimming the resin lid with a band saw" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Trimming with the band saw</span><span class="lang-zh">小带锯切割去除多余边缘</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              Then the drill. The hole appeared — but the resin <strong>cracked</strong>: the moment the bit punched through, the resin fractured radially outward from the hole.
+            </p>
+            <p class="lang-zh">
+              然后进行了钻孔。但这里出了点问题：用钻打孔的时候，孔是打出来了，但是树脂，<strong>碎裂了</strong>：钻头钻穿瞬间，树脂从孔缘向外放射状开裂。
+            </p>
+            <div class="callout callout--safety">
+              <div class="callout-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <div class="callout-body">
+                <strong><span class="lang-en">Drilling brittle resin</span><span class="lang-zh">钻孔脆性树脂</span></strong>
+                <span class="lang-en">Cured epoxy resin is brittle under point loading. Drilling through thin walls risks radial fracture when the bit breaks through. Use the slowest speed possible, apply gentle pressure, and consider drilling a pilot hole first. Eye protection is essential.</span>
+                <span class="lang-zh">固化后的环氧树脂在点载荷下很脆。在薄壁上钻孔时，钻头穿透瞬间有放射状开裂的风险。使用最慢的转速，施加轻柔压力，可以考虑先钻导向孔。务必佩戴护目镜。</span>
+              </div>
+            </div>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The crack — radial fractures from the drill hole" data-caption-zh="裂缝——从钻孔向外放射状开裂">
+                  <img src="../../assets/images/03-SLA-printing-sanding/broken.jpg" alt="Resin lid cracked radially from drilling" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Utterly disheartening — so much work, and it cracked</span><span class="lang-zh">万念俱灰——付出了很多，碎了</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              Utterly disheartening after all that effort. But we didn't give up — I asked Kevin if there was a fix. Two options: (1) resin repair (same material, likely better result, 24-hour cure); (2) UV glue + UV light (different material, might show, but fast). Meanwhile, Lucia re-modeled the internal placeholder to avoid the glass-jar fiasco if we needed to remold. (We didn't end up needing it.)
+            </p>
+            <p class="lang-zh">
+              万念俱灰，因为付出了很多但是碎了。不过我们没气馁，我询问了Kevin有没有解决方法：可以重做，也可以修补。修补有两种选项：树脂修补（材质相同，效果也许会更好，需要24小时）；UV胶+UV照射（材料不同，可能会有问题，但快速修补）。与此同时，Lucia为了避免玻璃杯的惨剧再次发生，重新建模了内部的占位结构，以备修补失败时重新翻模（不过最终没用上）。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Lucia's redesigned internal placeholder — backup plan in case repair failed" data-caption-zh="Lucia重新设计的内部占位结构——万一修补失败的备用方案">
+                  <img src="../../assets/images/03-SLA-printing-sanding/backup-mold.png" alt="Redesigned internal placeholder for backup remolding" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Lucia's redesigned placeholder — backup plan that ended up not being needed</span><span class="lang-zh">Lucia重新设计的占位件——最终没用上的备用方案</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              Kevin told us upfront: even repaired cracks are hard to make fully invisible — resin may not bond the fracture surfaces perfectly. We chose to try same-material repair anyway. Same material means the resin <span class="mark-underline">bonds chemically rather than just adhering at the surface</span> — structurally, the seam becomes one piece. After sanding, color, transparency, and texture match almost perfectly.
+            </p>
+            <p class="lang-zh">
+              Kevin告诉我们，就算修补裂缝的痕迹也很难完全消除，因为树脂可能很难完美连接断面。我们最后选择了使用相同材料填补。使用相同材料填补，<span class="mark-underline">树脂与周围结构形成化学键合而非单纯的表面粘附</span>——接缝从结构上变为一体。打磨后颜色、透明度与表面质感几乎与原件完全一致。
+            </p>
+            <p class="lang-en">
+              We prised the cracks open, worked resin into the gaps, pressed the fragments back together, and used the mold plus rubber bands as a clamp to hold everything tight during the 24-hour cure.
+            </p>
+            <p class="lang-zh">
+              我们想到的方法就是尽量掰开裂缝后倒入树脂并涂抹，然后放入断片，让树脂尽可能进入裂缝，再用模具+橡皮筋外加一些束缚的压力，让断裂处尽量紧紧相接。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Resin poured into the cracks, held under pressure with the mold and rubber bands" data-caption-zh="树脂灌入裂缝，用模具和橡皮筋加压固定">
+                  <img src="../../assets/images/03-SLA-printing-sanding/repair-with-resin.jpg" alt="Resin crack repair held with mold and rubber bands" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Resin repair — mold + rubber bands as clamp</span><span class="lang-zh">树脂修补——模具+橡皮筋当夹具</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              The result was surprisingly good. After <span class="mark-highlight">24 hours</span> of curing and a round of sanding, the crack is nearly invisible. The frosted texture is even across the whole surface.
+            </p>
+            <p class="lang-zh">
+              还好最后修补的效果惊人的不错。等待<span class="mark-highlight">24小时</span>固化，重新打磨后，裂缝几乎不可见，磨砂质感均匀覆盖整个表面。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="After repair and sanding — the crack is nearly invisible" data-caption-zh="修补打磨后——裂缝几乎不可见">
+                  <img src="../../assets/images/03-SLA-printing-sanding/repaired-lid.jpg" alt="Repaired lid after sanding — crack nearly invisible" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">After repair and sanding — nearly invisible</span><span class="lang-zh">修补打磨后——几乎看不见裂缝</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Sanding</span><span class="lang-zh">打磨</span></h4>
+            <p class="lang-en">
+              Wet sanding by hand: 60 → 120 → 240 → 400 → 600 → 1000 grit, sanding both inside and outside at each stage.
+            </p>
+            <p class="lang-zh">
+              关于打磨，我们使用湿磨的方式，用砂纸手动打磨，从60 → 120 → 240 → 400 → 600 → 1000目逐步细化，内外都要打磨。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The sandpaper grid — from 60 grit all the way to 1000" data-caption-zh="砂纸系列——从60目一直到1000目">
+                  <img src="../../assets/images/03-SLA-printing-sanding/sanding-paper.jpg" alt="Sandpaper grit progression from 60 to 1000" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">60 → 120 → 240 → 400 → 600 → 1000 grit</span><span class="lang-zh">60 → 120 → 240 → 400 → 600 → 1000 目</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              <strong>Wet sanding tip:</strong> <span class="mark-highlight">keep the sandpaper soaked in water throughout</span>. It dissipates heat — preventing the resin from micro-melting and clogging the abrasive — and traps the dust in the water instead of sending it airborne. <span class="mark-circle">When the rinse water turns cloudy, that's your signal that material is being removed.</span> Much more efficient than dry sanding.
+            </p>
+            <p class="lang-zh">
+              <strong>湿磨技巧：</strong><span class="mark-highlight">砂纸全程浸水</span>，既能散热——防止树脂因摩擦微熔堵塞砂粒——又能将粉尘锁在水中，避免扬尘。<span class="mark-circle">水变浑浊正是材料被带走的信号</span>，比干磨效率更高。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Wet sanding after repair — water traps dust and prevents micro-melting" data-caption-zh="修补后湿磨——水锁住粉尘并防止微熔">
+                  <img src="../../assets/images/03-SLA-printing-sanding/sanding-after-repair.jpg" alt="Wet sanding the repaired resin lid" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Wet sanding — water traps dust and signals material removal</span><span class="lang-zh">湿磨——水锁住粉尘，浑浊就是材料被带走的信号</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              Sanding is extremely meditative. With a podcast in my ears, I find it genuinely enjoyable: watching a rough surface become smooth, the texture satisfying under my fingertips. The one thing to watch out for: don't over-sand and make the walls too thin. And make sure the coarse grits have removed all edges before moving on — skipping ahead just means more work at the fine end.
+            </p>
+            <p class="lang-zh">
+              打磨是一个很考验耐心的流程，越粗糙的砂纸处理表面棱角的速度越快。所以在进入细的目数之前，确保已经用粗糙的目数打磨掉所有的棱角，再进入下一步，会省略很多不必要的折磨。我其实觉得打磨真的很解压，对我来说如果耳机里放着播客，打磨实在是一个令人享受的过程：看着粗糙的表面变得完美、手感令人舒适。唯一需要注意的就是不要过度打磨，以防让树脂的局部太薄。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The finished sanded lid — frosted texture, even and smooth" data-caption-zh="打磨完成的上盖——磨砂质感均匀细腻">
+                  <img src="../../assets/images/03-SLA-printing-sanding/sanded-lid.jpg" alt="Finished sanded resin lid with frosted texture" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Finished — frosted, even, satisfying</span><span class="lang-zh">完成——磨砂均匀，令人满意</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- ====== PART B ====== -->
+        <div class="process-part-heading" id="process-b">
+          <div class="process-part-heading-letter">B</div>
+          <div>
+            <p class="part-tag"><span class="lang-en">Part B</span><span class="lang-zh">第 B 部分</span></p>
+            <h3><span class="lang-en">White Base — SLA Printing</span><span class="lang-zh">白色底座——SLA打印</span></h3>
+            <p class="part-desc lang-en">With Kevin's guidance, we learned the general SLA workflow — which is actually fairly similar to FDM: model, export, arrange and add supports, slice, print, remove, strip supports, UV post-cure, sand. A few things are meaningfully different though.</p>
+            <p class="part-desc lang-zh">在Kevin的帮助下，我们学习了光固化打印的大致流程，其实大致与普通的3D打印机操作相差不多：建模、导出、摆盘加支撑、切片、打印、取出、拆除支撑、UV光二次固化、打磨。不过有几点确实值得注意的不同之处。</p>
+          </div>
+        </div>
+
+        <!-- §2.1 ghost: FDM vs SLA -->
+        <div class="step">
+          <div class="step-num step-num--ghost">·</div>
+          <div class="step-body">
+            <h4><span class="lang-en">FDM vs SLA: a few differences worth noting</span><span class="lang-zh">FDM 与 SLA：几点值得注意的差异</span></h4>
+            <p class="lang-en">
+              For the white base, we used water-washable white SLA resin. GIX's printer is an inverted resin machine — UV light cures one layer at a time from below, then the platform lifts to peel the cured layer off the bottom.
+            </p>
+            <p class="lang-zh">
+              对于白色底座，我们选择用可水洗的白色树脂SLA打印。GIX的是倒挂式树脂打印机，每次用光照射固化一层树脂后，平台需要抬升，将固化的树脂从底部扯下来。
+            </p>
+            <p class="lang-en">
+              Orientation logic differs from FDM in a few ways. In FDM, the biggest concern is adhesion on the first layer — you usually place the flattest, largest face directly on the bed to maximize grip. In SLA, tilting the model <span class="mark-highlight">30–45°</span> significantly improves success rate. Printing at an angle reduces the contact area per layer with the resin vat, and smaller area means less peel force as the platform rises — no vacuum suction effect. Kevin mentioned roughly this range, and I looked it up afterward; the literature agrees.
+            </p>
+            <p class="lang-zh">
+              摆放的逻辑和FDM打印有些微不同。FDM打印时，我们主要考虑首层附着力，一般将最平坦、面积最大的面直接贴紧打印平台。对于SLA，将模型倾斜<span class="mark-highlight">30–45°</span>可以大大提高打印成功率。以一定角度打印模型，可以减少每个打印层与树脂槽的接触量，减小表面积意味着平台在每打印一层后上升时，打印件所受到的力更小，也不会形成真空吸盘效应。Kevin告诉我大概是这样，我事后查询了相关资料，确实。
+            </p>
+            <p class="lang-en">
+              One more observation: SLA slice files are image sequences rather than G-code motion paths, so they're much larger than FDM files. And because FDM speed depends on volume and path length while SLA speed depends only on layer count, SLA is surprisingly fast for flat, thin objects.
+            </p>
+            <p class="lang-zh">
+              顺带一提，SLA打印的切片文件是光照射图像的图片序列，所以切片文件相较于FDM的运动路径gcode大很多。并且因为FDM的速度取决于体积和路径，而SLA的速度取决于层数，所以SLA在打很扁的对象的时候极快。
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Post-processing: clean, cure, and sand</span><span class="lang-zh">后处理：清洗、固化与打磨</span></h4>
+            <p class="lang-en">
+              After printing, glove up and carefully detach the inverted platform — watch out for resin drips. GIX has two isopropyl alcohol tanks for washing: the first for initial cleaning (gets dirty fast, changed more often), the second for detail finishing.
+            </p>
+            <p class="lang-zh">
+              SLA树脂打印后，带着手套将倒挂的平台拆下，注意防止打印机中带出的液体飞溅。GIX为树脂打印机准备了2个酒精容器槽：第一个进行初步处理，容易浑浊，更常换；第二个进行细节处理，比较干净。
+            </p>
+            <p class="lang-en">
+              Remove the model from the platform, soak in the first IPA tank, strip most supports by hand, then brush the surface gently to clear residual resin. Finish in the second tank. Keep the brush and model submerged as much as possible — avoids splashing.
+            </p>
+            <p class="lang-zh">
+              从平台上取下模型后，放入第一个酒精容器中浸泡，用手拆除大部分支撑，然后用刷子轻轻扫过表面，清除附着的树脂液体。完成后在第二个容器内进一步清洁。使用刷子时，尽量让刷子和模型都置于液面下，防止酒精飞溅。
+            </p>
+            <p class="lang-en">
+              Once clean, UV cure under a lamp: 15 minutes one side, flip, 15 minutes the other. Repeat as needed until fully hardened. Then take it to the workshop and wet sand from 60 grit up to 1000.
+            </p>
+            <p class="lang-zh">
+              清洁完成后，将模型放入UV照射灯下，照射15min，翻面后再照射15min；视情况反复，直到模型彻底固化。然后进入工坊内继续湿磨，从60目一直到1000目。
+            </p>
+            <div class="photo-grid">
+              <figure>
+                <div class="photo-item" data-caption="The SLA-printed white base after sanding" data-caption-zh="SLA打印白色底座打磨完成">
+                  <img src="../../assets/images/03-SLA-printing-sanding/sanded-base.jpg" alt="SLA-printed white base after wet sanding" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">The white base — sanded</span><span class="lang-zh">白色底座——打磨完成</span></figcaption>
+              </figure>
+              <figure>
+                <div class="photo-item" data-caption="The white base from another angle" data-caption-zh="白色底座另一角度">
+                  <img src="../../assets/images/03-SLA-printing-sanding/sanded-base-2.jpg" alt="SLA-printed white base from another angle" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Another angle</span><span class="lang-zh">另一角度</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- SECTION 03: KNOWLEDGE POINTS ---- -->
+    <section class="content-section" id="knowledge">
+      <p class="content-section-label">
+        <span class="content-section-num">03</span> <span class="lang-en">Knowledge Points</span><span class="lang-zh">知识点</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">Things to remember</span><span class="lang-zh">值得记住的事</span></h2>
+
+      <div class="knowledge-list">
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg> <span class="lang-en">Check the demold path before finalizing the mold design</span><span class="lang-zh">定稿模具设计前先检查脱模路径</span></h4>
+          <p class="lang-en">
+            Any shape that narrows after a wider section — a champagne flute, a T, anything with a re-entrant angle — creates an undercut. Once silicone cures around it, the master can't come straight out. <span class="mark-highlight">Walk the demold path mentally before you hit print.</span> If a cut is needed to demold, plan where it goes from the start.
+          </p>
+          <p class="lang-zh">
+            任何先宽后窄的形状——高脚杯、T形、任何内凹角——都会造成undercut。一旦硅胶固化包裹其中，原件就无法直接取出。<span class="mark-highlight">定稿之前在脑子里模拟一遍脱模路径。</span>如果必须切割才能脱模，从一开始就规划好切割位置。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> <span class="lang-en">Never use glass as an internal placeholder in silicone</span><span class="lang-zh">硅胶内部占位结构绝对不要用玻璃</span></h4>
+          <p class="lang-en">
+            <span class="mark-wave">Silicone bonds strongly to smooth glass, and glass can't compress or flex</span> — making it nearly impossible to remove once cured. Use a 3D-printed PLA part instead: rough surface, slightly elastic, and you can design a handle or beam for pulling. Kevin warned us. We ignored it. Don't.
+          </p>
+          <p class="lang-zh">
+            <span class="mark-wave">硅胶与光滑玻璃的粘附力极强，而玻璃没有弹性，无法压缩或形变</span>——固化后几乎不可能取出。应使用3D打印PLA件代替：表面粗糙，略有弹性，还可以设计把手或横梁方便拔出。Kevin警告过我们，我们无视了。不要重蹈覆辙。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> <span class="lang-en">Same-material resin repair creates a chemical bond</span><span class="lang-zh">同材料树脂修补形成化学键合</span></h4>
+          <p class="lang-en">
+            Filling a crack with the same resin doesn't just glue the surfaces together — it crosslinks with the surrounding material and becomes structurally one piece. After sanding, color, transparency, and texture match almost perfectly. Much stronger and more invisible than any adhesive repair.
+          </p>
+          <p class="lang-zh">
+            用相同树脂填补裂缝，不仅仅是把表面粘在一起——它与周围材料发生交联，从结构上成为一体。打磨后颜色、透明度与质感几乎完全一致。比任何胶水修补都更牢固、更难察觉。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span class="lang-en">SLA orientation: tilt 30–45° for better results</span><span class="lang-zh">SLA摆放：倾斜30–45°效果更好</span></h4>
+          <p class="lang-en">
+            Unlike FDM (which prioritizes first-layer adhesion by placing the largest face flat), SLA benefits from a <span class="mark-highlight">30–45° tilt</span>. The angle reduces per-layer contact area with the resin vat, cutting peel force as the platform rises and preventing vacuum-suction failures. It also cuts layer count for certain flat shapes, speeding up the print.
+          </p>
+          <p class="lang-zh">
+            与FDM（将最大面平放以保证首层附着）不同，SLA从<span class="mark-highlight">30–45°</span>倾斜中受益更多。倾斜减少了每层与树脂槽的接触面积，降低平台上升时的剥离力，防止真空吸盘效应导致失败。对于某些扁平形状，倾斜还能减少层数，加快打印速度。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg> <span class="lang-en">Wet sanding: keep the paper soaked, read the water</span><span class="lang-zh">湿磨：砂纸全程泡水，观察水的浑浊度</span></h4>
+          <p class="lang-en">
+            <span class="mark-highlight">Soaked sandpaper dissipates heat</span> (prevents the resin from micro-melting and loading up the abrasive) and traps dust in the water instead of releasing it into the air. <span class="mark-circle">When the rinse water turns cloudy, material is being removed</span> — a useful real-time signal. Don't skip to finer grit before the current grit has removed all surface edges. Once those are gone, moving up becomes much faster.
+          </p>
+          <p class="lang-zh">
+            <span class="mark-highlight">浸水的砂纸能够散热</span>（防止树脂微熔堵塞砂粒），并将粉尘锁在水中而不是散入空气。<span class="mark-circle">冲洗水变浑浊，就说明材料正在被带走</span>——这是一个直观的实时信号。不要在当前目数还没磨平所有棱角之前就换更细的砂纸。一旦棱角消失，升目就会快得多。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- SECTION 04: NOTES & REFLECTION ---- -->
+    <section class="content-section" id="notes">
+      <p class="content-section-label">
+        <span class="content-section-num">04</span> <span class="lang-en">Notes &amp; Reflection</span><span class="lang-zh">笔记与反思</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">What I took away</span><span class="lang-zh">我的收获</span></h2>
+
+      <div class="photo-grid photo-grid--1">
+        <figure>
+          <div class="photo-item photo-item--full" data-caption="The finished AuraSync enclosure — frosted lid and white base" data-caption-zh="完成的AuraSync外壳——磨砂上盖与白色底座">
+            <img src="../../assets/images/03-SLA-printing-sanding/final-model.jpg" alt="Finished AuraSync enclosure — frosted resin lid and white SLA base assembled" loading="lazy" />
+          </div>
+          <figcaption><span class="lang-en">The finished AuraSync enclosure</span><span class="lang-zh">完成的AuraSync外壳</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="notes-section-inner">
+        <div class="notes-content">
+          <p class="notes-date"><span class="lang-en">Week 6 – 8 · Spring 2026</span><span class="lang-zh">第 6 – 8 周 · 2026年春季学期</span></p>
+
+          <p class="lang-en">
+            This phase felt different from the earlier ones. Instead of practicing techniques in isolation, we were making something real — a part that actually needed to fit, look good, and work inside a product. That pressure surfaced a lot of overconfidence in our mold design. We thought we knew how to make molds by now. We didn't, not completely.
+          </p>
+          <p class="lang-zh">
+            这个阶段和之前的感觉不同。不再是孤立地练习技术，我们在做一个真实的东西——一个需要配合、需要好看、需要在产品里实际运作的零件。这种压力把我们对模具设计的过度自信暴露出来了。我们以为自己已经会做模具了，其实还没有，不完全是。
+          </p>
+
+          <p class="lang-en">
+            The glass jar will stay with me as a lesson in not ignoring warnings you've already heard. The undercut was pure design laziness — we prioritized material savings over actually thinking through the demold. And the crack from drilling was just bad luck, but the recovery taught something useful: resin repairs its own kind better than any adhesive can.
+          </p>
+          <p class="lang-zh">
+            玻璃杯这个教训会让我记住：不要无视你已经听到的警告。undercut则是纯粹的设计懒惰——我们优先考虑节省材料，而没有认真思考脱模。钻孔裂缝是运气不好，但修补过程教会了有用的东西：树脂修补自身材料的效果，比任何胶水都好。
+          </p>
+
+          <p class="lang-en">
+            And sanding. I didn't expect to enjoy it. There's something genuinely satisfying about watching a rough surface become smooth under your hands — especially when you know what it took to get there.
+          </p>
+          <p class="lang-zh">
+            还有打磨。我没想到自己会喜欢上它。亲眼看着粗糙的表面在手下变得光滑，有一种真实的满足感——尤其是当你知道为了走到这一步付出了多少的时候。
+          </p>
+
+          <ul class="reflection-list">
+            <li>
+              <span class="reflection-icon">✓</span>
+              <span>
+                <span class="lang-en"><strong>What worked:</strong> Same-material resin repair — the result was nearly invisible after sanding. The wiggle cut for demolding, though unplanned, still let the mold seal back together well enough to use. SLA post-processing was clean and well-supported by GIX's setup.</span>
+                <span class="lang-zh"><strong>做得好的：</strong> 同材料树脂修补——打磨后效果几乎看不出来。z字型切割虽属无奈之举，但合回去之后密封效果依然够用。SLA后处理流程清晰，GIX的设备支持也很完善。</span>
+              </span>
+            </li>
+            <li>
+              <span class="reflection-icon">△</span>
+              <span>
+                <span class="lang-en"><strong>What I'd do differently:</strong> Mentally walk the demold path before printing the master — especially for single-piece molds. Never use glass as a placeholder. Fillet all interior corners before finalizing the lid geometry. Drill pilot holes in brittle resin before going to full diameter.</span>
+                <span class="lang-zh"><strong>下次会改变的：</strong> 打印母模之前先在脑子里模拟脱模路径——尤其是单体模。绝对不用玻璃做占位结构。在定稿盖子几何形状之前先把所有内角做圆角处理。在脆性树脂上钻孔先用小径钻头打导向孔。</span>
+              </span>
+            </li>
+            <li>
+              <span class="reflection-icon">→</span>
+              <span>
+                <span class="lang-en"><strong>What this taught me for future work:</strong> Mold design experience doesn't accumulate as fast as you think. Each new shape introduces new failure modes. The repair mindset matters too — knowing you can recover from a crack or a bad demold makes the whole process less precious and more iterative.</span>
+                <span class="lang-zh"><strong>对未来工作的启示：</strong> 模具设计经验的积累没有你想象的那么快。每一个新形状都会带来新的失败方式。修补的心态同样重要——知道自己可以从裂缝或脱模失败中恢复，会让整个过程更轻松、更具迭代性。</span>
+              </span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Back link bottom -->
+    <a href="../../index.html" class="back-link back-link--bottom">
+      <span class="arrow">←</span> <span class="lang-en">Back to all projects</span><span class="lang-zh">返回所有项目</span>
+    </a>
+
+  </main>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="lang-en">TECHIN 600 · Independent Study · Spring 2026</span><span class="lang-zh">TECHIN 600 · 独立研究 · 2026年春季学期</span><br>
+      Yutong Luo · University of Washington MSTI
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/TongSUE/TECHIN-600-Spring2026" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.776.42-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/rough-notation.js"></script>
+<script src="../../assets/js/annotations.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
