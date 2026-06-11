@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 04: Injection Mold — TECHIN 600</title>
+  <meta name="description" content="Designing and SLA-printing an injection mold for a rabbit figurine, then running it on a desktop injection molding machine. Week 9–10 of TECHIN 600 Independent Study." />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="project-page">
+
+<!-- Reading Progress -->
+<div class="reading-progress"><div class="reading-progress-bar"></div></div>
+
+<!-- ====== HEADER ====== -->
+<header class="site-header">
+  <nav class="container site-nav">
+    <a href="../../index.html" class="nav-logo">
+      <span class="nav-logo-main">TECHIN 600</span>
+      <span class="nav-logo-sub">Spring 2026 · Process Book</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../../index.html#overview"><span class="lang-en">Overview</span><span class="lang-zh">概述</span></a></li>
+      <li><a href="../../index.html#projects"><span class="lang-en">Projects</span><span class="lang-zh">项目</span></a></li>
+      <li><a href="https://github.com/TongSUE/TECHIN-600-Spring2026" target="_blank" rel="noopener">GitHub ↗</a></li>
+      <li><button type="button" class="lang-toggle">中文</button></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Back link -->
+<a href="../../index.html" class="back-link">
+  <span class="arrow">←</span> <span class="lang-en">All Projects</span><span class="lang-zh">所有项目</span>
+</a>
+
+<!-- ====== PROJECT HERO ====== -->
+<section class="project-hero">
+  <div class="container">
+    <p class="project-hero-kicker"><span class="lang-en">Project 04 · Week 9 – 10</span><span class="lang-zh">项目 04 · 第 9 – 10 周</span></p>
+    <h1 class="project-hero-title">
+      <span class="lang-en">Injection Mold</span>
+      <span class="lang-zh">注塑</span>
+    </h1>
+    <p class="project-hero-subtitle">
+      <span class="lang-en">A cute rabbit, a printed mold, and a machine that runs at 400°C</span>
+      <span class="lang-zh">可爱的兔子、打印出来的模具，以及一台400°C高温的注塑机</span>
+    </p>
+    <div class="project-hero-meta">
+      <span class="meta-tag"><span><span class="lang-en">Status</span><span class="lang-zh">状态</span></span> <span class="lang-en">Complete</span><span class="lang-zh">已完成</span></span>
+      <span class="meta-tag"><span><span class="lang-en">Method</span><span class="lang-zh">方法</span></span> <span class="lang-en">SLA mold + desktop injection</span><span class="lang-zh">SLA模具 + 桌面注塑机</span></span>
+      <span class="meta-tag"><span><span class="lang-en">Material</span><span class="lang-zh">材料</span></span> <span class="lang-en">PP plastic</span><span class="lang-zh">PP塑料</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- Cover photo -->
+<div class="project-cover">
+  <img src="../../assets/images/04-injection-mold/final.jpg" alt="Finished injection-molded yellow PP rabbit figurine" />
+</div>
+
+<!-- ====== MAIN LAYOUT ====== -->
+<div class="project-layout">
+
+  <!-- Sidebar Nav -->
+  <aside class="project-sidebar">
+    <ul class="sidebar-nav">
+      <li>
+        <a href="#overview" class="active">
+          <span class="sidebar-nav-num">01</span> <span class="lang-en">Overview</span><span class="lang-zh">概述</span>
+        </a>
+      </li>
+      <li>
+        <a href="#process">
+          <span class="sidebar-nav-num">02</span> <span class="lang-en">Process</span><span class="lang-zh">制作过程</span>
+        </a>
+        <ul class="sidebar-subnav">
+          <li><a href="#process-a"><span class="lang-en">A — Design &amp; Fabrication</span><span class="lang-zh">A — 设计与制作</span></a></li>
+          <li><a href="#process-b"><span class="lang-en">B — Injection Molding</span><span class="lang-zh">B — 注塑</span></a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#knowledge">
+          <span class="sidebar-nav-num">03</span> <span class="lang-en">Knowledge</span><span class="lang-zh">知识点</span>
+        </a>
+      </li>
+      <li>
+        <a href="#notes">
+          <span class="sidebar-nav-num">04</span> <span class="lang-en">Notes</span><span class="lang-zh">笔记</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Content -->
+  <main class="project-content">
+
+    <!-- ---- SECTION 01: OVERVIEW ---- -->
+    <section class="content-section" id="overview">
+      <p class="content-section-label">
+        <span class="content-section-num">01</span> <span class="lang-en">Overview</span><span class="lang-zh">概述</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">The last project — and the most industrial</span><span class="lang-zh">最后一个项目——也是最工业化的一个</span></h2>
+
+      <p class="lang-en">
+        The final project of the Independent Study: injection molding. The overall process is fairly straightforward — design the mold, SLA-print it, inject plastic. Three steps, clean and industrial.
+      </p>
+      <p class="lang-zh">
+        独立研究的最后一个项目：注塑。整体来说流程相当简单——设计模具、SLA打印模具、注塑。三步走，干净利落。
+      </p>
+      <p class="lang-en">
+        I chose a cute rabbit as the target. Getting the mold geometry right — especially the parting line and avoiding undercuts — turned out to require more thought than expected.
+      </p>
+      <p class="lang-zh">
+        我选择了可爱的兔子作为注塑目标。把模具几何形状做对——尤其是分型面和避免undercut——事实证明比预期需要更多思考。
+      </p>
+
+      <p class="content-section-label"><span class="lang-en">Materials Used</span><span class="lang-zh">使用材料</span></p>
+      <div class="overview-materials">
+        <span class="material-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+          <span class="lang-en">SLA Resin (mold)</span><span class="lang-zh">SLA树脂（模具）</span>
+        </span>
+        <span class="material-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          <span class="lang-en">PP Plastic (yellow)</span><span class="lang-zh">PP塑料（黄色）</span>
+        </span>
+        <span class="material-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          <span class="lang-en">Steel alignment pins</span><span class="lang-zh">钢柱（定位用）</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- ---- SECTION 02: PROCESS ---- -->
+    <section class="content-section" id="process">
+      <p class="content-section-label">
+        <span class="content-section-num">02</span> <span class="lang-en">Process</span><span class="lang-zh">制作过程</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">Step by step</span><span class="lang-zh">制作步骤</span></h2>
+
+      <div class="process-steps">
+
+        <!-- ====== PART A ====== -->
+        <div class="process-part-heading" id="process-a">
+          <div class="process-part-heading-letter">A</div>
+          <div>
+            <p class="part-tag"><span class="lang-en">Part A</span><span class="lang-zh">第 A 部分</span></p>
+            <h3><span class="lang-en">Design &amp; Fabrication</span><span class="lang-zh">设计与制作模型</span></h3>
+            <p class="part-desc lang-en">Learning from the undercut disaster in Project 03, this time mold feasibility — especially ease of demolding — was the first thing on the checklist. And there turned out to be more to think about than just geometry.</p>
+            <p class="part-desc lang-zh">吸取了上次的教训，这次在设计模具的时候格外注意模具的合理性，尤其是脱模的方便程度，防止产生undercuts。不过需要考虑的事情还不只是几何形状。</p>
+          </div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Fixing the undercuts</span><span class="lang-zh">修复undercut</span></h4>
+            <p class="lang-en">
+              I chose a cute rabbit as the injection target.
+            </p>
+            <p class="lang-zh">
+              我选择了可爱的兔子作为注塑的目标。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The original rabbit model — too thick and solid for injection molding" data-caption-zh="原始兔子模型——对于注塑来说太厚太实">
+                  <img src="../../assets/images/04-injection-mold/raw-rabbit.png" alt="Original rabbit 3D model before modification" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">The original rabbit — before any modifications</span><span class="lang-zh">原始兔子——修改前</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              There's a problem with injection molding thick, solid models: long cooling times, and the uneven cooling rate between exterior and interior can create internal voids. So I reworked the model into a flatter shape, keeping it as thin as possible.
+            </p>
+            <p class="lang-zh">
+              注塑这门工艺不太适合特别厚的实心模型：冷却时间长，还会因为内外冷却速度不均产生空腔。于是我将模型修改为更加合适的造型：压扁了，尽量做薄。
+            </p>
+            <p class="lang-en">
+              But there was still the undercut problem. If I set the parting line at the center of the model, the recesses between the rabbit's ears and feet would create undercuts. <span class="mark-underline">The parting line must be at the widest cross-section</span> — so I laboriously reworked the mesh in Fusion, merging the left and right ears together and doing the same for the feet, making the middle the widest point all around.
+            </p>
+            <p class="lang-zh">
+              但是问题仍然存在：如果把分型面定在正中间，兔子耳朵和双脚之间的凹陷会形成undercuts。<span class="mark-underline">分型面一定要在最宽处</span>——于是我用Fusion艰难地修复了这个网格模型，将左右耳朵和双脚分别缝合在了一起，使得中间的分型面最宽。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The fixed rabbit — ears and feet merged so the parting line sits at the widest point" data-caption-zh="修复后的兔子——耳朵和脚分别缝合，分型面位于最宽处">
+                  <img src="../../assets/images/04-injection-mold/rabbit-fixed.png" alt="Modified rabbit model with merged ears and feet for clean parting line" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Fixed — ears merged, feet merged, parting line at the widest cross-section</span><span class="lang-zh">修复后——耳朵缝合、脚缝合，分型面位于最宽处</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Gate, vents, and alignment pins</span><span class="lang-zh">进料口、排气槽和定位柱</span></h4>
+            <p class="lang-en">
+              For an injection mold, a <strong>gate</strong> is required — the inlet through which molten plastic enters the cavity. As the melt rushes in, it pushes the air already in the cavity ahead of it. That air needs somewhere to escape: that's what <strong>vent slots</strong> are for.
+            </p>
+            <p class="lang-zh">
+              对于注塑模具，需要预留出<strong>进料口</strong>：顾名思义，融化的材料进入模具的入口。熔料往里冲的时候，会把型腔里原本的空气往前推，而空气总得有地方出去，这便是<strong>排气槽</strong>的用处。
+            </p>
+            <p class="lang-en">
+              <span class="mark-highlight">Vent slots should be as shallow as possible</span> — just deep enough for air to escape but not wide enough for melt to squeeze through — and they open at the last point the melt reaches. The gate should be as funnel-shaped as possible to guide the melt smoothly into the cavity.
+            </p>
+            <p class="lang-zh">
+              <span class="mark-highlight">排气槽尽量浅</span>，以防止熔料溢出，从熔料最后流动到的地方开口；进料口则是尽可能类似于漏斗形状，方便熔料进入模具内部。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Mold design — gate, vent slots, and alignment pin holes" data-caption-zh="模具设计——进料口、排气槽和定位柱孔位">
+                  <img src="../../assets/images/04-injection-mold/mold-design.png" alt="Injection mold design showing gate, vent slots, and alignment pin holes" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Mold design — gate (funnel), vents, and two diagonal alignment pin holes</span><span class="lang-zh">模具设计——漏斗进料口、排气槽，以及斜对角两个定位柱孔</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              Two holes were placed at diagonal corners to accept steel alignment pins, keeping the two mold halves precisely registered during injection.
+            </p>
+            <p class="lang-zh">
+              在斜对角打了两个孔，用于插入钢柱定位，在注塑的过程中保证模具紧紧贴合。
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4><span class="lang-en">SLA printing and post-processing</span><span class="lang-zh">打印与后处理</span></h4>
+            <p class="lang-en">
+              SLA printing, then the same post-processing as before: isopropyl alcohol wash, UV cure — 15 minutes each side.
+            </p>
+            <p class="lang-zh">
+              SLA打印后，如之前一样用酒精进行清理，并照射UV光正反面各15min固化树脂。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="UV curing the SLA-printed mold halves" data-caption-zh="UV灯照射固化SLA打印的模具">
+                  <img src="../../assets/images/04-injection-mold/uv-light.jpg" alt="SLA printed mold halves under UV curing lamp" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">UV curing — 15 min per side</span><span class="lang-zh">UV固化——正反面各15min</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              One small snag: SLA resin shrinks slightly after printing, so <span class="mark-wave">the 0.2 mm tolerance I left for the alignment pin holes turned out to be too tight</span>. I had to open them up a bit with a metal tool afterward.
+            </p>
+            <p class="lang-zh">
+              这里有一点问题：树脂打印后似乎有一些收缩，所以<span class="mark-wave">为定位柱预留的公差（0.2mm）有点小了</span>，后续又用金属工具打磨扩大了一些。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The finished SLA-printed mold halves, ready for injection" data-caption-zh="打印完成的两片模具，准备注塑">
+                  <img src="../../assets/images/04-injection-mold/sla-print-mold.jpg" alt="Finished SLA-printed injection mold halves" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">The printed mold halves — alignment pin holes manually widened</span><span class="lang-zh">打印完成的两片模具——定位柱孔手动打磨扩大</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- ====== PART B ====== -->
+        <div class="process-part-heading" id="process-b">
+          <div class="process-part-heading-letter">B</div>
+          <div>
+            <p class="part-tag"><span class="lang-en">Part B</span><span class="lang-zh">第 B 部分</span></p>
+            <h3><span class="lang-en">Injection Molding</span><span class="lang-zh">注塑</span></h3>
+            <p class="part-desc lang-en">GIX has a desktop injection molding machine, clamped to a workbench. It can reach temperatures up to 400°C, so thick insulated gloves are mandatory to avoid burns.</p>
+            <p class="part-desc lang-zh">GIX有的是一个桌面级的注塑机，用定位的夹子固定在桌子上。注塑机使用时可能会达到400度的高温，所以为了安全考虑，需要带上厚厚的隔热手套防止烫伤。</p>
+          </div>
+        </div>
+
+        <!-- Machine intro (ghost) -->
+        <div class="step">
+          <div class="step-num step-num--ghost">·</div>
+          <div class="step-body">
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The desktop injection molding machine at GIX" data-caption-zh="GIX的桌面级注塑机">
+                  <img src="../../assets/images/04-injection-mold/injection-mold-machine.jpg" alt="Desktop injection molding machine clamped to workbench" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">The GIX desktop injection molding machine</span><span class="lang-zh">GIX的桌面级注塑机</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Calibration and setup</span><span class="lang-zh">定位校准与安装</span></h4>
+            <p class="lang-en">
+              Before running, the machine needs to be calibrated so the nozzle aligns perfectly with the gate. This is done by adjusting four screws for forward/backward position, a long screw for left/right offset, and a set of screws for the overall height off the bench. Once aligned, the mold is locked into the clamp fixture at the base and you're ready to go.
+            </p>
+            <p class="lang-zh">
+              在使用之前，需要进行定位校准，使得注塑机的出料口对准模具的进料口。这通过4个固定的螺丝来修改前后距离，用一根长螺丝来调整模具的左右位置，以及用一组螺丝来调节机器整体距离桌面的高度。将模具放入注塑机底部的固定夹结构中锁死，便可以开始注塑了。
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Injection — heat, press, wait</span><span class="lang-zh">注塑——加热、压下、等待</span></h4>
+            <p class="lang-en">
+              This session used yellow PP plastic, heated to <span class="mark-highlight">390°C</span>. During heating, the temperature climbs to around 405°C then pauses and slowly settles back down to 390°C — presumably to ensure the plastic is fully molten throughout. While heating, watch the drip outlet at the bottom of the machine: any plastic that oozes out needs to be scraped off promptly with a flat metal spatula.
+            </p>
+            <p class="lang-zh">
+              这次使用的材料是黄色的PP塑料，加热到<span class="mark-highlight">390°C</span>即可。加热时会爬升到405°C左右再暂停加热慢慢恢复390°C（确保塑料融化？）。加热的过程中需要注意注塑机下方熔料出口的塑料滴落，要适时用工具（这里用的是很平的金属勺子）刮掉。
+            </p>
+            <p class="lang-en">
+              Once the plastic is molten, press the plunger down to inject. Hold the plunger steady and feel the resistance change — when it builds up noticeably, the cavity is full. <span class="mark-highlight">Keep the plunger pressed for another 15–30 seconds</span> after filling to prevent the plastic from pulling back, then return the plunger to its original position and wait for the mold to cool.
+            </p>
+            <p class="lang-zh">
+              待塑料融化后，压下压杆挤出融化的塑料，保持杆下压，感受力度的变化，直到阻力变大，则注塑的塑料完全充满模具的腔体。<span class="mark-highlight">在挤压完成后，依然要保持杆下压到底的状态约15~30s</span>，防止塑料回缩，然后将压杆复原到原位，等待模具冷却后取出。
+            </p>
+            <div class="photo-grid">
+              <figure>
+                <div class="photo-item" data-caption="Right after injection — still in the mold" data-caption-zh="注塑后——还在模具里">
+                  <img src="../../assets/images/04-injection-mold/injected.jpg" alt="Mold right after injection, before opening" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Right after injection</span><span class="lang-zh">注塑完成，冷却中</span></figcaption>
+              </figure>
+              <figure>
+                <div class="photo-item" data-caption="Opening the cooled mold — the rabbit appears" data-caption-zh="打开冷却后的模具——兔子出来了">
+                  <img src="../../assets/images/04-injection-mold/opened.jpg" alt="Opened mold revealing the injection-molded rabbit" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Opened — and there's the rabbit</span><span class="lang-zh">打开模具——兔子出来了</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h4><span class="lang-en">Three rounds — the point of injection molding</span><span class="lang-zh">三次量产——这就是注塑的意义</span></h4>
+            <p class="lang-en">
+              The whole point of injection molding is repeatability. I ran three rounds. The SLA-printed mold will start degrading after <span class="mark-wave">around 10 uses</span> — injection pressure gradually deforms the walls until they no longer seal, and the heat takes its toll on the SLA resin over time. But three rabbits in quick succession? That's the whole idea.
+            </p>
+            <p class="lang-zh">
+              注塑模具的优势就是可以量产！我尝试了3次。不过受限于材料，<span class="mark-wave">SLA打印的模具大约使用10次后质量就开始下降</span>，这主要是因为注入塑料会使得模具受到向外的压力而膨胀变形、不再密闭，也因为加热后SLA难免熔化。但是快速连产三只兔子？这就是注塑的意义。
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="Three rounds — three rabbits, same mold" data-caption-zh="三次——三只兔子，同一套模具">
+                  <img src="../../assets/images/04-injection-mold/rabbits!.jpg" alt="Three yellow PP injection-molded rabbit figurines" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">Three rabbits, three rounds, one mold</span><span class="lang-zh">三次、三只兔子、一套模具</span></figcaption>
+              </figure>
+            </div>
+            <p class="lang-en">
+              And finally, after trimming off the gate sprue — the finished rabbit.
+            </p>
+            <p class="lang-zh">
+              最后看看修剪除去进料管的兔子模型吧！
+            </p>
+            <div class="photo-grid photo-grid--1">
+              <figure>
+                <div class="photo-item" data-caption="The finished rabbit — gate sprue trimmed off" data-caption-zh="修剪掉进料管的成品兔子">
+                  <img src="../../assets/images/04-injection-mold/final.jpg" alt="Finished injection-molded rabbit with gate trimmed" loading="lazy" />
+                </div>
+                <figcaption><span class="lang-en">The finished rabbit</span><span class="lang-zh">成品兔子</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- SECTION 03: KNOWLEDGE POINTS ---- -->
+    <section class="content-section" id="knowledge">
+      <p class="content-section-label">
+        <span class="content-section-num">03</span> <span class="lang-en">Knowledge Points</span><span class="lang-zh">知识点</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">Things to remember</span><span class="lang-zh">值得记住的事</span></h2>
+
+      <div class="knowledge-list">
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg> <span class="lang-en">Keep injection-molded parts thin — max ~8 mm</span><span class="lang-zh">注塑件要薄——最厚处约8mm以内</span></h4>
+          <p class="lang-en">
+            Thick, solid models are problematic for injection molding: the outside cools and solidifies while the inside is still hot, creating uneven shrinkage and internal voids. <span class="mark-highlight">Keep the model as thin as reasonably possible</span> — the thinner the part, the more evenly it cools and the cleaner the result.
+          </p>
+          <p class="lang-zh">
+            厚实的实心模型对注塑来说很麻烦：外层冷却固化时内部还是热的，导致收缩不均、内部产生空腔。<span class="mark-highlight">模型尽量做薄</span>——越薄冷却越均匀，成品也越干净。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg> <span class="lang-en">The parting line must sit at the widest cross-section</span><span class="lang-zh">分型面必须位于最宽处</span></h4>
+          <p class="lang-en">
+            Any concavity at the parting line — gaps between ears, between legs — becomes an undercut that locks the part in the mold. <span class="mark-underline">Set the parting line at the widest cross-section of the model</span>, so both halves pull cleanly away. Sometimes this means modifying the model geometry (merging features) rather than just choosing a different split plane.
+          </p>
+          <p class="lang-zh">
+            分型面处的任何凹陷——耳朵之间、腿之间的间隙——都会形成undercut，把零件锁死在模具里。<span class="mark-underline">将分型面设在模型的最宽截面处</span>，让两半模具都能干净地脱离。有时这意味着需要修改模型几何形状（合并特征），而不仅仅是换一个分型平面。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg> <span class="lang-en">Vents: shallow and at the far end. Gate: funnel-shaped</span><span class="lang-zh">排气槽：尽量浅，开在最远端；进料口：漏斗形</span></h4>
+          <p class="lang-en">
+            Vent slots let trapped air escape as the melt fills the cavity. <span class="mark-highlight">Keep them shallow enough that melt can't squeeze through</span> — they only need to pass air, not plastic. Place them at the point the melt reaches last. The gate (inlet) should be funnel-shaped to guide melt in without turbulence.
+          </p>
+          <p class="lang-zh">
+            排气槽让熔料充满型腔时被困的空气得以逸出。<span class="mark-highlight">要足够浅，让熔料无法挤入</span>——它只需要让空气通过，而不是让塑料通过。将其开在熔料最后流动到的位置。进料口（浇口）应为漏斗形，引导熔料平稳进入，减少湍流。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="lang-en">Hold the plunger down for 15–30 s after filling</span><span class="lang-zh">充满后保持压杆下压15–30s</span></h4>
+          <p class="lang-en">
+            After the cavity fills and resistance rises, <span class="mark-highlight">keep the plunger pressed for another 15–30 seconds</span>. Releasing too early lets the still-molten plastic contract and pull back, leaving sinks or incomplete fills. Only release once the gate has solidified enough to hold the material in place.
+          </p>
+          <p class="lang-zh">
+            腔体充满、阻力上升后，<span class="mark-highlight">依然保持压杆下压约15–30s</span>。过早松开会让尚未凝固的塑料收缩回流，留下缩痕或填充不完整。等浇口处固化到足以锁住材料后，再松开压杆。
+          </p>
+        </div>
+
+        <div class="knowledge-card">
+          <h4><svg class="card-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> <span class="lang-en">SLA molds last about 10 shots before they fail</span><span class="lang-zh">SLA模具约能用10次</span></h4>
+          <p class="lang-en">
+            Each injection cycle puts outward pressure on the mold walls, gradually deforming them until the halves no longer seal. Heat also degrades the SLA resin over time. Quality starts dropping after <span class="mark-wave">around 10 shots</span> — which makes SLA molds great for rapid testing and small runs, but not for mass production. If you need volume, a machined metal mold is the right call.
+          </p>
+          <p class="lang-zh">
+            每次注射循环都对模具壁施加向外的压力，逐渐变形直到两半不再密封，高温也会随时间降解SLA树脂。<span class="mark-wave">大约10次之后质量就开始下降</span>——所以SLA模具非常适合快速测试和小批量，但不适合大量生产。如果需要量产，定做金属模具才是正确选择。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- SECTION 04: NOTES & REFLECTION ---- -->
+    <section class="content-section" id="notes">
+      <p class="content-section-label">
+        <span class="content-section-num">04</span> <span class="lang-en">Notes &amp; Reflection</span><span class="lang-zh">笔记与反思</span>
+      </p>
+      <h2 class="content-section-title"><span class="lang-en">What I took away</span><span class="lang-zh">我的收获</span></h2>
+
+      <div class="photo-grid photo-grid--1">
+        <figure>
+          <div class="photo-item photo-item--full" data-caption="The finished rabbit — trimmed and ready" data-caption-zh="修剪完成的兔子成品">
+            <img src="../../assets/images/04-injection-mold/final.jpg" alt="Finished injection-molded yellow PP rabbit" loading="lazy" />
+          </div>
+          <figcaption><span class="lang-en">The finished rabbit</span><span class="lang-zh">成品兔子</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="notes-section-inner">
+        <div class="notes-content">
+          <p class="notes-date"><span class="lang-en">Week 9 – 10 · Spring 2026</span><span class="lang-zh">第 9 – 10 周 · 2026年春季学期</span></p>
+
+          <p class="lang-en">
+            Injection molding felt different from the silicone and resin work — cleaner in some ways, more machine-dependent in others. The mold design demanded careful upfront thinking (parting line, gate, vents, tolerances), but the actual injection step was fast and satisfying: press, feel the resistance rise, hold, wait, open.
+          </p>
+          <p class="lang-zh">
+            注塑和之前的硅胶、树脂工作感觉不同——某些方面更干净，某些方面更依赖机器。模具设计需要在前期认真思考（分型面、进料口、排气槽、公差），但实际注塑的那一步又快又爽：压下、感受阻力上升、保持、等待、打开。
+          </p>
+
+          <p class="lang-en">
+            The tolerance miss on the alignment pins was a good reminder that SLA shrinkage is real and worth accounting for. 0.2 mm sounded like a generous gap; it wasn't. Next time I'd go 0.3–0.4 mm.
+          </p>
+          <p class="lang-zh">
+            定位柱公差失误是个好提醒：SLA的收缩确实存在，值得认真计入。0.2mm看起来是个不错的间隙，结果不够用。下次我会留0.3–0.4mm。
+          </p>
+
+          <p class="lang-en">
+            And three rabbits in a row — that's what made it click. You design once, and then you just keep pressing the plunger. For short runs and prototyping, it's hard to beat.
+          </p>
+          <p class="lang-zh">
+            连续产出三只兔子的那一刻，真正理解了注塑的意义。你只需要设计一次，然后不断压杆就行了。对于小批量和原型制作，这种工艺很难被超越。
+          </p>
+
+          <ul class="reflection-list">
+            <li>
+              <span class="reflection-icon">✓</span>
+              <span>
+                <span class="lang-en"><strong>What worked:</strong> Proactively fixing the parting line by merging model features paid off — no demolding issues. The funnel gate design let plastic flow in smoothly. Three clean shots on the first mold.</span>
+                <span class="lang-zh"><strong>做得好的：</strong> 主动通过合并特征修复分型面起了作用——没有脱模问题。漏斗进料口让塑料顺畅流入。第一套模具顺利完成了三次注塑。</span>
+              </span>
+            </li>
+            <li>
+              <span class="reflection-icon">△</span>
+              <span>
+                <span class="lang-en"><strong>What I'd do differently:</strong> Leave more tolerance for the alignment pins (0.3–0.4 mm instead of 0.2 mm) to account for SLA shrinkage. Watch the drip nozzle more actively during heating — scraping late is messier than scraping early.</span>
+                <span class="lang-zh"><strong>下次会改变的：</strong> 定位柱公差留大一些（0.3–0.4mm而不是0.2mm），计入SLA收缩。加热时更主动地关注出料口——晚刮比早刮麻烦得多。</span>
+              </span>
+            </li>
+            <li>
+              <span class="reflection-icon">→</span>
+              <span>
+                <span class="lang-en"><strong>What this taught me broadly:</strong> Injection molding rewards upfront design rigor — the mold has to be right before you run anything. But once it is, the process is remarkably repeatable. That repeatability is the whole value proposition.</span>
+                <span class="lang-zh"><strong>更广泛的收获：</strong> 注塑奖励前期严谨的设计——模具必须在运行之前就做对。但一旦做对了，过程就极具可重复性。这种可重复性正是它的核心价值。</span>
+              </span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Back link bottom -->
+    <a href="../../index.html" class="back-link back-link--bottom">
+      <span class="arrow">←</span> <span class="lang-en">Back to all projects</span><span class="lang-zh">返回所有项目</span>
+    </a>
+
+  </main>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="lang-en">TECHIN 600 · Independent Study · Spring 2026</span><span class="lang-zh">TECHIN 600 · 独立研究 · 2026年春季学期</span><br>
+      Yutong Luo · University of Washington MSTI
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/TongSUE/TECHIN-600-Spring2026" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.305 3.495.998.108-.776.42-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/rough-notation.js"></script>
+<script src="../../assets/js/annotations.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
